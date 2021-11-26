@@ -1,77 +1,111 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <NuxtLogo />
-        <VuetifyLogo />
-      </v-card>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
+    <v-col cols="12" sm="10" md="10" lg="8">
+      <HeroArea />
+      <div class="mx-10">
+        <!-- about -->
+        <v-row class="mt-12 mb-8">
+          <v-col>
+            <h3>About</h3>
+            <v-row>
+              <v-col>
+                <p>image</p>
+              </v-col>
+              <v-col>
+                <p>Japan DAO AssociationはPear to Pearのジョブマッチングコミュニティです。今後新しい組織運営・働き方として一般的になるDAOが集い、新しい働き方を模索する同志が集まる刺激的な場所です。皆様が海外のブロックチェーン業界、DAOで生計を立てることを目指す同志と切磋琢磨し、スキルと実績を積む機会を提供します。</p>
+              </v-col>
+            </v-row>
+          </v-col>
+        </v-row>
+        <!-- services -->
+        <v-row class="my-8">
+          <v-col>
+            <h3>Services</h3>
+            <v-row>
+              <v-col>
+                <!-- <v-card
+                  v-for="item in items"
+                  :key="item.title"
+                >
+                  sample
+                </v-card> -->
+                <v-card>sample</v-card>
+              </v-col>
+              <v-col>
+                <v-card>sample</v-card>
+              </v-col>
+              <v-col>
+                <v-card>sample</v-card>
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col>
+                <v-card>sample</v-card>
+              </v-col>
+              <v-col>
+                <v-card>sample</v-card>
+              </v-col>
+              <v-col>
+                <v-card>sample</v-card>
+              </v-col>
+            </v-row>
+          </v-col>
+        </v-row>
+        <!-- conversions -->
+        <v-row class="my-8">
+          <v-col>
+            <h3>For people who want to work at DAOs</h3>
+            <p>このプロジェクトの目的は、『DAOで生計を立てられる個人を増やす』ことです。<br />ここで同じ志を持つ仲間と学び、実績を作り、経済的な自由を獲得しましょう。</p>
+          </v-col>
+          <v-col>
+            <h3>For Recruiters at DAOs</h3>
+            <p>採用を実施しているDAOや投資家、経営者、企業の採用担当者の方は、ここで実際に仕事を探す人とコミュニケーションを取ることにより採用コストやミスマッチを減らす事ができます。</p>
+          </v-col>
+        </v-row>
+        <!-- alliances -->
+        <v-row class="my-8">
+          <v-col>
+            <h3>Partner DAOs, Community</h3>
+            <v-row>
+              <v-col>
+                <v-card>sample</v-card>
+              </v-col>
+              <v-col>
+                <v-card>sample</v-card>
+              </v-col>
+              <v-col>
+                <v-card>sample</v-card>
+              </v-col>
+              <v-col>
+                <v-card>sample</v-card>
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col>
+                <v-card>sample</v-card>
+              </v-col>
+              <v-col>
+                <v-card>sample</v-card>
+              </v-col>
+              <v-col>
+                <v-card>sample</v-card>
+              </v-col>
+              <v-col>
+                <v-card>sample</v-card>
+              </v-col>
+            </v-row>
+          </v-col>
+        </v-row>
+        <!-- roadmap -->
+        <!-- faq -->
+        <Footer />
+      </div>
     </v-col>
   </v-row>
 </template>
+
+<script>
+export default {
+  
+}
+</script>

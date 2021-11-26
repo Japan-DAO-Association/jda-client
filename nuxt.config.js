@@ -2,16 +2,16 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   // 404 routing
-  router: {
-    extendRoutes(routes, resolve) {
-      routes.push({
-        name: '404 error',
-        path: '*',
-        // component: resolve('~/pages/404.vue')
-        component: resolve(__dirname, 'pages/404.vue'),
-      })
-    },
-  },
+  // router: {
+  //   extendRoutes(routes, resolve) {
+  //     routes.push({
+  //       name: '404 error',
+  //       path: '*',
+  //       // component: resolve('~/pages/404.vue')
+  //       component: resolve(__dirname, 'pages/404.vue'),
+  //     })
+  //   },
+  // },
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -77,7 +77,7 @@ export default {
     '@nuxtjs/pwa',
     // https://i18n.nuxtjs.org/
     [
-      'nuxt-i18n',
+      '@nuxtjs/i18n',
       {
         locales: [
           { code: 'ja', name: 'Japanese', iso: 'ja-JP', file: 'ja.json' },

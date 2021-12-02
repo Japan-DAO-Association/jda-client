@@ -47,7 +47,7 @@ export default {
     background: rgba(57, 11, 247, 0.6);
     padding: 8px 90px;
     position: absolute;
-    right: 0;
+    right: 10%;
     bottom: 34%;
     font-family: Sanchez;
     font-style: italic;
@@ -59,6 +59,7 @@ export default {
       display: inline-block;
     }
     @media (max-width: 580px) {
+      right: 0;
       padding: 8px 24px;
       font-size: 40px;
       line-height: 64px;

@@ -1,5 +1,5 @@
 <template>
-  <!-- Nuxt.jsに対応していないので少々変更してぶちこんでいる -->
+  <!-- Nuxt.jsに対応していないので少々改良してぶちこんでいる -->
   <div class="textra">
     <div 
       class="mainTextra"

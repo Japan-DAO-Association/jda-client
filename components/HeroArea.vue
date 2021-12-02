@@ -1,10 +1,40 @@
 <template>
   <v-row class="hero">
     <v-col cols="12" class="">
-      <h2 class="hero-text">Life with DAO</h2>
+      <h2 class="hero-text">
+        <Textra
+          :data="words"
+          :timer="2"
+          :infinite="true"
+          filter="flash"
+          class="textra"
+        ></Textra>
+        with DAO
+      </h2>
     </v-col>
   </v-row>
 </template>
+
+<script>
+import Textra from './Font/Textra';
+
+export default {
+  components: {
+    Textra,
+  },
+  data () {
+    return {
+      words: [
+        "Life",
+        "Engineer",
+        "Creator",
+        "Artist",
+        "Musician",
+      ]
+    }
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .hero {
@@ -20,11 +50,15 @@
     right: 10%;
     bottom: 34%;
     font-family: Sanchez;
-    font-style: normal;
+    font-style: italic;
     font-weight: normal;
     font-size: 72px;
     line-height: 100px;
     color: #fff;
+
+    .textra {
+      display: inline-block;
+    }
   }
 }
 </style>

@@ -47,7 +47,7 @@ export default {
     background: rgba(57, 11, 247, 0.6);
     padding: 8px 90px;
     position: absolute;
-    right: 10%;
+    right: 0;
     bottom: 34%;
     font-family: Sanchez;
     font-style: italic;
@@ -55,9 +55,13 @@ export default {
     font-size: 72px;
     line-height: 100px;
     color: #fff;
-
     .textra {
       display: inline-block;
+    }
+    @media (max-width: 580px) {
+      padding: 8px 24px;
+      font-size: 40px;
+      line-height: 64px;
     }
   }
 }

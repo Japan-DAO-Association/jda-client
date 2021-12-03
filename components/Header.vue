@@ -91,6 +91,7 @@ export default {
   background: linear-gradient(180deg, rgba(15, 36, 219, 1) 0%, rgba(40, 99, 232, 0.8) 100%);
   color: #fff;
   font-weight: 500;
+  overflow: hidden;
   .top-link {
     color: #fff;
   }

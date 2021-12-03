@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app dark class="app">
     <Header />
     <v-main class="pb-0">
       <v-container 
@@ -19,4 +19,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.app {
+  overflow: hidden;
+}
 </style>

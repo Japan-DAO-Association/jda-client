@@ -146,13 +146,13 @@
         <v-row class="my-16">
           <v-col
             cols="12" xs="10" md="10" lg="8"
-            class="mx-auto alliance-row"
+            class="mx-auto"
           >
             <v-row>
               <v-col>
                 <h3 class="my-6 text-h4 font-weight-bold">提携DAOコミュニティ</h3>
                 <div class="mx-4 mt-8">
-                  <v-row>
+                  <v-row class="alliance-row">
                     <v-col>
                       <v-card class="card">
                         <v-card-title class="card-title">ブロックチェーン研究所</v-card-title>
@@ -310,6 +310,9 @@ export default {
     }
   }
   .alliance-row {
+    @media (max-width: 600px) {
+      display: block;
+    }
     .card {
       background: #0A2942;
       border-radius: 24px;

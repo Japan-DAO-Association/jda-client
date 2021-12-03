@@ -60,6 +60,7 @@
             <v-row>
               <v-col
               cols="12" xs="10" md="5" lg="5"
+              class="my-auto"
               >
                 <img src="@/assets/images/about.png" 
                   alt="JDA Symbol"
@@ -71,7 +72,8 @@
                 cols="12" xs="10" md="5" lg="5"
                 class="xs-margin"
               >
-                <p>Japan DAO AssociationはPear to Pearのジョブマッチングコミュニティです。今後新しい組織運営・働き方として一般的になるDAOが集い、新しい働き方を模索する同志が集まる刺激的な場所です。皆様が海外のブロックチェーン業界、DAOで生計を立てることを目指す同志と切磋琢磨し、スキルと実績を積む機会を提供します。</p>
+                <p>Japan DAO AssociationはPear to Pearのジョブマッチングコミュニティです。<br /><br />
+                今後新しい組織運営・働き方として一般的になるDAOが集い、新しい働き方を模索する同志が集まる刺激的な場所です。皆様が海外のブロックチェーン業界、DAOで生計を立てることを目指す同志と切磋琢磨し、スキルと実績を積む機会を提供します。</p>
               </v-col>
             </v-row>
           </v-col>

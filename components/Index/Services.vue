@@ -28,6 +28,26 @@
           </v-card>
         </v-col>
       </v-row>
+      <v-row class="service-row">
+        <v-col class="service-col">
+          <v-card class="card">
+            <v-card-title class="card-title">NFT</v-card-title>
+            <v-card-text class="card-text">Coming soon...</v-card-text>
+          </v-card>
+        </v-col>
+        <v-col class="service-col">
+          <v-card class="card">
+            <v-card-title class="card-title">Utility Token</v-card-title>
+            <v-card-text class="card-text">Coming soon...</v-card-text>
+          </v-card>
+        </v-col>
+        <v-col class="service-col">
+          <v-card class="card">
+            <v-card-title class="card-title">ブロックチェーンプロジェクト支援</v-card-title>
+            <v-card-text class="card-text">Coming soon...</v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
     </div>
   </div>
 </template>

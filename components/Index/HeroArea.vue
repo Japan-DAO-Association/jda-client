@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import Textra from './Font/Textra';
+import Textra from '@/components/Font/Textra';
 
 export default {
   components: {

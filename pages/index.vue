@@ -34,6 +34,7 @@
 </template>
 
 <script>
+import HeroArea from '@/components/Index/HeroArea';
 import IndexLayout from '@/components/Index/Layout';
 import News from '@/components/Index/News';
 import About from '@/components/Index/About';
@@ -44,6 +45,7 @@ import Roadmap from '@/components/Index/Roadmap';
 
 export default {
   components: {
+    HeroArea,
     IndexLayout,
     News,
     About,

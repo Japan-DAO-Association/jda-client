@@ -17,6 +17,9 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    'vue/no-v-html': 'off'
+    'vue/no-v-html': 'off',
+    'vue/multi-word-component-names': 'off',
+    'vue/first-attribute-linebreak': 'off',
+    'vue/no-reserved-props': 'off',
   }
 }

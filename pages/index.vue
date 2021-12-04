@@ -7,35 +7,20 @@
     <v-col cols="12">
       <HeroArea />
       <div class="mx-10">
-        <IndexLayout>
-          <News />
-        </IndexLayout>
-        <IndexLayout>
-          <About />
-        </IndexLayout>
-        <IndexLayout>
-          <Services />
-        </IndexLayout>
-        <!-- conversions -->
-        <IndexLayout>
-          <Conversions />
-        </IndexLayout>
-        <!-- alliances -->
-        <IndexLayout>
-          <Alliances />
-        </IndexLayout>
-        <!-- roadmap -->
-        <IndexLayout>
-          <Roadmap />
-        </IndexLayout>
+        <Layout><News /></Layout>
+        <Layout><About /></Layout>
+        <Layout><Services /></Layout>
+        <Layout><Conversions /></Layout>
+        <Layout><Alliances /></Layout>
+        <Layout><Roadmap /></Layout>
       </div>
     </v-col>
   </v-row>
 </template>
 
 <script>
+import Layout from '@/components/Layout';
 import HeroArea from '@/components/Index/HeroArea';
-import IndexLayout from '@/components/Index/Layout';
 import News from '@/components/Index/News';
 import About from '@/components/Index/About';
 import Services from '@/components/Index/Services';
@@ -46,7 +31,7 @@ import Roadmap from '@/components/Index/Roadmap';
 export default {
   components: {
     HeroArea,
-    IndexLayout,
+    Layout,
     News,
     About,
     Services,

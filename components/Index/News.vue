@@ -1,7 +1,7 @@
 <template>
   <div>
     <H3>News</H3>
-    <!-- medium apiから最新の記事のリンク、日付、タイトルをとってくる -->
+    <!-- medium apiから最新の記事の画像、リンク、日付、タイトルをとってくる -->
     <div class="mx-4 mt-8">
       <v-row>
         <v-col

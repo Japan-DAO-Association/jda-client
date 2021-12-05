@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <Aos>
     <H3>About</H3>
       <div class="mx-4 mt-8">
         <v-row>
@@ -22,14 +22,16 @@
           </v-col>
         </v-row>
       </div>
-  </div>
+  </Aos>
 </template>
 
 <script>
+import Aos from '@/components/Aos';
 import H3 from '@/components/Font/H3';
 
 export default {
   components: {
+    Aos,
     H3,
   }
 }

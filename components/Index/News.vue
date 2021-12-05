@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <Aos>
     <H3>News</H3>
     <!-- medium apiから最新の記事の画像、リンク、日付、タイトルをとってくる -->
     <div class="mx-4 mt-8">
@@ -36,13 +36,16 @@
         </v-col>
       </v-row>
     </div>
-  </div>
+  </Aos>
 </template>
 
 <script>
+import Aos from '@/components/Aos';
 import H3 from '@/components/Font/H3';
+
 export default {
   components: {
+    Aos,
     H3,
   }
 }

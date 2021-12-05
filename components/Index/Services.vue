@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <Aos>
     <H3>Services</H3>
     <div class="mx-4 mt-8">
       <v-row class="service-row">
@@ -49,14 +49,16 @@
         </v-col>
       </v-row>
     </div>
-  </div>
+  </Aos>
 </template>
 
 <script>
+import Aos from '@/components/Aos';
 import H3 from '@/components/Font/H3';
 
 export default {
   components: {
+    Aos,
     H3,
   }
 }
@@ -89,6 +91,9 @@ export default {
       @media (max-width: 700px) {
         height: 200px;
       }
+      @media (max-width: 580px) {
+        padding: 2px 6px;
+      }
       .card-title {
         font-family: "Noto Sans CJK JP";
         font-weight: bold;
@@ -98,6 +103,9 @@ export default {
         @media (max-width: 960px) {
           font-size: 20px;
           line-height: 32px;
+        }
+        @media (max-width: 580px) {
+          padding: 10px;
         }
       }
       .card-text {

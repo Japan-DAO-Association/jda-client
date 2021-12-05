@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <Aos>
     <v-row class="conversion-row">
       <v-col class="conversion-col">
         <H3>海外DAOで働きたい方へ</H3>
@@ -15,14 +15,16 @@
         </div>
       </v-col>
     </v-row>
-  </div>
+  </Aos>
 </template>
 
 <script>
+import Aos from '@/components/Aos';
 import H3 from '@/components/Font/H3';
 
 export default {
   components: {
+    Aos,
     H3,
   }
 }

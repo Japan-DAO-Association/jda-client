@@ -1,18 +1,20 @@
 <template>
-  <div>
+  <Aos>
     <v-row>
       <v-col>
         <H3>Roadmap</H3>
       </v-col>
     </v-row>
-  </div>
+  </Aos>
 </template>
 
 <script>
+import Aos from '@/components/Aos';
 import H3 from '@/components/Font/H3';
 
 export default {
   components: {
+    Aos,
     H3,
   }
 }

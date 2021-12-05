@@ -17,8 +17,10 @@
             cols="12" xs="10" md="5" lg="5"
             class="about-text"
           >
-            <p>Japan DAO AssociationはPear to Pearのジョブマッチングコミュニティです。<br /><br />
-            今後新しい組織運営・働き方として一般的になるDAOが集い、新しい働き方を模索する同志が集まる刺激的な場所です。皆様が海外のブロックチェーン業界、DAOで生計を立てることを目指す同志と切磋琢磨し、スキルと実績を積む機会を提供します。</p>
+            <!-- <p>Japan DAO AssociationはPear to Pearのジョブマッチングコミュニティです。<br /><br />
+            今後新しい組織運営・働き方として一般的になるDAOが集い、新しい働き方を模索する同志が集まる刺激的な場所です。皆様が海外のブロックチェーン業界、DAOで生計を立てることを目指す同志と切磋琢磨し、スキルと実績を積む機会を提供します。</p> -->
+            <p>Japan DAO Association is a Pear to Pear job matching community.<br /><br />
+              It is a stimulating place for DAOs, which are becoming more common as a new way of working and managing organizations, to gather and for like-minded people to explore new ways of working. We provide an opportunity for you to improve your skills and achievements through friendly competition with other DAOs who are aiming to make a living in the blockchain industry overseas.</p>
           </v-col>
         </v-row>
       </div>

@@ -1,5 +1,6 @@
 <template>
-  <v-row 
+  <v-row
+    ref="vantaRef"
     justify="center"
     align="center"
     class="wrapper"
@@ -19,6 +20,7 @@
 </template>
 
 <script>
+import Net from 'vanta/src/vanta.net';
 import Layout from '@/components/Layout';
 import HeroArea from '@/components/Index/HeroArea';
 import News from '@/components/Index/News';
@@ -38,7 +40,29 @@ export default {
     Conversions,
     Alliances,
     Roadmap,
-  }
+  },
+  mounted() {
+    this.vantaEffect = Net({
+      el: this.$refs.vantaRef,
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xff3f91,
+      backgroundColor: 0x0b193e,
+      points: 10,
+      maxDistance: 20,
+      spacing: 12,
+    })
+  },
+  beforeDestroy() {
+    if (this.vantaEffect) {
+      this.vantaEffect.destroy()
+    }
+  },
 }
 </script>
 

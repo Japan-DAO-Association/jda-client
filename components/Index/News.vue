@@ -8,14 +8,14 @@
           cols="3"
         >
           <a href="#" target="_blank" rel="noopener">
-            <p>日付</p>
+            <p>Date</p>
           </a>
         </v-col>
         <v-col
           cols="8"
         >
           <a href="#" target="_blank" rel="noopener">
-            <p>記事のタイトル</p>
+            <p>title of an article</p>
           </a>
         </v-col>
       </v-row>
@@ -24,14 +24,30 @@
           cols="3"
         >
           <a href="#" target="_blank" rel="noopener">
-            <p>日付</p>
+            <p>Date</p>
           </a>
         </v-col>
         <v-col
           cols="8"
         >
           <a href="#" target="_blank" rel="noopener">
-            <p>記事のタイトル</p>
+            <p>title of an article</p>
+          </a>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col
+          cols="3"
+        >
+          <a href="#" target="_blank" rel="noopener">
+            <p>Date</p>
+          </a>
+        </v-col>
+        <v-col
+          cols="8"
+        >
+          <a href="#" target="_blank" rel="noopener">
+            <p>title of an article</p>
           </a>
         </v-col>
       </v-row>

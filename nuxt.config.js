@@ -39,6 +39,13 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {
+        type: 'text/javascript',
+        src: "https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js",
+        defer: true,
+      }
     ]
   },
 

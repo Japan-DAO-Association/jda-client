@@ -16,22 +16,7 @@
           cols="12" xs="10" md="3" lg="3"
           class="discord-btn-wrapper"
         >
-          <a
-           href="https://t.co/SgOht8hbIA"
-           target="_blank"
-           rel="noopener"
-          >
-            <v-btn
-              class="discord-btn"
-            >
-              <img
-              src="@/assets/images/discord-btn.png"
-              alt="Discord image"
-              class="discord-btn-image"
-              >
-              Join Discord
-            </v-btn>
-          </a>
+          <DiscordButton />
         </v-col>
       </v-row>
     </div>
@@ -41,11 +26,13 @@
 <script>
 import Aos from '@/components/Aos';
 import H3 from '@/components/Font/H3';
+import DiscordButton from '@/components/DiscordButton';
 
 export default {
   components: {
     Aos,
     H3,
+    DiscordButton,
   }
 }
 </script>
@@ -73,16 +60,6 @@ export default {
   .discord-btn-wrapper {
     @media (max-width: 960px) {
       text-align: center;
-    }
-    .discord-btn {
-      background: linear-gradient(90deg, #467DE7 0%, #DA46E7 100%);
-      border-radius: 8px;
-      width: 202px;
-      height: 50px;
-      color: #fff;
-      .discord-btn-image {
-        margin-right: 10px;
-      }
     }
   }
 }

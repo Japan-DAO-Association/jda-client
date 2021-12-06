@@ -53,8 +53,6 @@ export default {
       await this.$axios.get(`${process.env.RSS2JSON_URL}https://medium.com/feed/@${process.env.MEDIUM_ACCOUNT_NAME}`).then((res) => {
         res.data.items.forEach((el) => {
           this.articles.push(el);
-          // eslint-disable-next-line no-console
-          console.log(el);
         });
       }).catch((e) => {
         throw new Error(e);

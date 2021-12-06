@@ -1,6 +1,6 @@
 <template>
   <Aos>
-    <H3>Services</H3>
+    <H3>Contents</H3>
     <div class="mx-4 mt-8">
       <v-row class="service-row">
         <v-col class="service-col">

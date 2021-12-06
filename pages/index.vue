@@ -10,7 +10,8 @@
       <div class="mx-10">
         <Layout><News /></Layout>
         <Layout><About /></Layout>
-        <Layout><Services /></Layout>
+        <Layout><Contents /></Layout>
+        <Layout class="discord-layout"><Discord /></Layout>
         <Layout><Conversions /></Layout>
         <Layout><Alliances /></Layout>
         <Layout><Roadmap /></Layout>
@@ -25,7 +26,8 @@ import Layout from '@/components/Layout';
 import HeroArea from '@/components/Index/HeroArea';
 import News from '@/components/Index/News';
 import About from '@/components/Index/About';
-import Services from '@/components/Index/Services';
+import Contents from '@/components/Index/Contents';
+import Discord from '@/components/Index/Discord';
 import Conversions from '@/components/Index/Conversions';
 import Alliances from '@/components/Index/Alliances';
 import Roadmap from '@/components/Index/Roadmap';
@@ -36,7 +38,8 @@ export default {
     Layout,
     News,
     About,
-    Services,
+    Contents,
+    Discord,
     Conversions,
     Alliances,
     Roadmap,
@@ -69,5 +72,21 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   background: rgba(11, 25, 62, 1);
+  .discord-layout {
+    background: #fff;
+    width: 110%;
+    margin-left: -5%;
+    padding: 3.4% 5%;
+    @media (max-width: 900px) {
+      width: 120%;
+      margin-left: -10%;
+      padding: 3.4% 10%;
+    }
+    @media (max-width: 500px) {
+      width: 130%;
+      margin-left: -15%;
+      padding: 3.4% 15%;
+    }
+  }
 }
 </style>

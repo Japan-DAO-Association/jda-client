@@ -5,7 +5,7 @@
     align="center"
     class="wrapper"
   >
-    <v-col cols="12">
+    <v-col cols="12" class="pb-0">
       <HeroArea />
       <div class="mx-10">
         <Layout><News /></Layout>
@@ -15,6 +15,7 @@
         <Layout><Conversions /></Layout>
         <Layout><Alliances /></Layout>
         <Layout><Roadmap /></Layout>
+        <Layout class="discord-layout discord-bottom-layout"><DiscordBottom /></Layout>
       </div>
     </v-col>
   </v-row>
@@ -31,6 +32,7 @@ import Discord from '@/components/Index/Discord';
 import Conversions from '@/components/Index/Conversions';
 import Alliances from '@/components/Index/Alliances';
 import Roadmap from '@/components/Index/Roadmap';
+import DiscordBottom from '@/components/Index/DiscordBottom';
 
 export default {
   components: {
@@ -43,6 +45,7 @@ export default {
     Conversions,
     Alliances,
     Roadmap,
+    DiscordBottom,
   },
   mounted() {
     this.vantaEffect = Net({
@@ -86,6 +89,22 @@ export default {
       width: 130%;
       margin-left: -15%;
       padding: 3.4% 15%;
+    }
+  }
+  .discord-bottom-layout {
+    margin-bottom: 0 !important;
+    background-image: url("@/assets/images/discord-bg.svg");
+    background-position: center;
+    background-size: 18% auto;
+    background-repeat: no-repeat;
+    @media (max-width: 1300px) {
+      background-size: 24% auto;
+    }
+    @media (max-width: 960px) {
+      background-size: 36% auto;
+    }
+    @media (max-width: 700px) {
+      background-size: 50% auto;
     }
   }
 }

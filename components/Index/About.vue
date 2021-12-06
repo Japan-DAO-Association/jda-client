@@ -7,7 +7,8 @@
           cols="12" xs="10" md="5" lg="5"
           class="my-auto"
         >
-          <img src="@/assets/images/about.png" 
+          <img
+            src="@/assets/images/about.png" 
             alt="JDA Symbol"
             class="symbol-img"
           >

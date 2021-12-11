@@ -1,17 +1,16 @@
 import colors from 'vuetify/es5/util/colors'
 
-export default {
-  // 404 routing
-  // router: {
-  //   extendRoutes(routes, resolve) {
-  //     routes.push({
-  //       name: '404 error',
-  //       path: '*',
-  //       // component: resolve('~/pages/404.vue')
-  //       component: resolve(__dirname, 'pages/404.vue'),
-  //     })
-  //   },
-  // },
+export default {// 404 routing
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: '404 error',
+        path: '*',
+        // component: resolve('~/pages/404.vue')
+        component: resolve(__dirname, 'pages/index.vue'),
+      })
+    },
+  },
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',

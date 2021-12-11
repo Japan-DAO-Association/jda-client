@@ -3,6 +3,23 @@
     <v-row>
       <v-col>
         <H3>Roadmap</H3>
+        <div class="mx-4 mt-0">
+          <v-row class="roadmap-row">
+            <v-col
+              class="pl-16"
+            >
+              <Aos
+                v-for="item in items"
+                :key="item.text"
+                class="roadmap-aos mx-auto"
+              >
+                <!-- 文字の左に何かつけたい -->
+                <!-- doneの項目とそうでないので横の・の色が違うなど区別したい -->
+                <H4>{{ item.text }}</H4>
+              </Aos>
+            </v-col>
+          </v-row>
+        </div>
       </v-col>
     </v-row>
   </Aos>
@@ -11,14 +28,38 @@
 <script>
 import Aos from '@/components/Aos';
 import H3 from '@/components/Font/H3';
+import H4 from '@/components/Font/H4';
 
 export default {
   components: {
     Aos,
     H3,
-  }
+    H4,
+  },
+  data: () => ({
+    items: [
+      { text: 'Open Job Matching Community (done)' },
+      { text: 'Publish Dapp and NFTs on Dfinity and Polygon' },
+      { text: 'Release Blockchain Engineering School using NFT' },
+      { text: 'Publish Job Matching Platform on Dfinity' },
+    ]
+  }),
 }
 </script>
 
 <style lang="scss" scoped>
+.roadmap-row {
+  .roadmap-aos {
+    width: 60%;
+    @media (max-width: 1600px) {
+      width: 80%;
+    }
+    @media (max-width: 1100px) {
+      width: 90%;
+    }
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
+}
 </style>

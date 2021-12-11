@@ -76,6 +76,8 @@ export default {
     '@nuxtjs/dotenv',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    // https://github.com/ivodolenc/nuxt-animejs
+    'nuxt-animejs',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

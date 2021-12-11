@@ -5,6 +5,7 @@
       <v-row
         v-for="article in articles"
         :key="article.title"
+        class="article-link-row"
       >
         <v-col
           cols="3"
@@ -14,7 +15,7 @@
             target="_blank"
             rel="noopener"
           >
-            <p>{{ article.pubDate }}</p>
+            <NormalText>{{ article.pubDate }}</NormalText>
           </a>
         </v-col>
         <v-col
@@ -25,7 +26,7 @@
             target="_blank"
             rel="noopener"
           >
-            <p>{{ article.title }}</p>
+            <NormalText>{{ article.title }}</NormalText>
           </a>
         </v-col>
       </v-row>
@@ -36,11 +37,13 @@
 <script>
 import Aos from '@/components/Aos';
 import H3 from '@/components/Font/H3';
+import NormalText from '@/components/Font/NormalText';
 
 export default {
   components: {
     Aos,
     H3,
+    NormalText,
   },
   data: () => ({
     articles: [],
@@ -63,3 +66,14 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.article-link-row {
+  &:hover {
+    p {
+      opacity: 0.8;
+      transition: 0.7s;
+    }
+  }
+}
+</style>

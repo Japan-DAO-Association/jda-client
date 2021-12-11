@@ -78,6 +78,8 @@ export default {
     '@nuxtjs/vuetify',
     // https://github.com/ivodolenc/nuxt-animejs
     'nuxt-animejs',
+    // https://github.com/ivodolenc/nuxt-gsap-module
+    'nuxt-gsap-module',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -115,6 +117,11 @@ export default {
   
   env: {
     // BASE_HOST: process.env.BASE_HOST,
+  },
+
+  // https://github.com/ivodolenc/nuxt-gsap-module
+  gsap: {
+
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

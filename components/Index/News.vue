@@ -50,9 +50,11 @@ export default {
   },
   methods: {
     async getArticles() {
-      await this.$axios.get(`${process.env.RSS2JSON_URL}https://medium.com/feed/@${process.env.MEDIUM_ACCOUNT_NAME}`).then((res) => {
-        res.data.items.forEach((el) => {
-          this.articles.push(el);
+      await this.$axios.get(`${process.env.RSS2JSON_URL}${process.env.MEDIUM_ACCOUNT_PAGE}feed/`).then((res) => {
+        [...Array(3)].forEach((_, i) => {
+          if (res.data.items[i] !== undefined) {
+            this.articles.push(res.data.items[i]);
+          }
         });
       }).catch((e) => {
         throw new Error(e);

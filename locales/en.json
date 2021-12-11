@@ -1,5 +1,48 @@
 {
-  "sample": {
-    "sample": "sample"
+  "index": {
+    "about": {
+      "desc": {
+        "1": "Japan DAO Association, JDA, is a Pear to Pear Job Matching Community.",
+        "2": "It's a stimulating place for people exploring new working styles, because DAOs will be more common as a new way of working and managing organizations and lots of DAOs are joining JDA. JDA provides opportunities to improve your skills and achievements with your friends aiming to make a living in the blockchain companies and DAOs."
+      }
+    },
+    "contents": {
+      "card": {
+        "1": {
+          "title": "Pear to Pear Job Matching Community",
+          "desc": "Provides a place producing synergy via \"jobs\""
+        },
+        "2": {
+          "title": "Blockchain Engineer Education Project",
+          "desc": "Educate blockchain engineers who will be active in DAOs"
+        },
+        "3": {
+          "title": "Influencer Development Support",
+          "desc": "Support the development of DAO-related influencers"
+        }
+      }
+    },
+    "discord": {
+      "desc": {
+        "1": "The purpose of this community is to \"increase the number of individuals who can make a living from DAOs\".",
+        "2": "Here, you can learn from like-minded people, build your track record, and achieve financial freedom.",
+        "3": "Investors, managers, and corporate recruiters can reduce hiring costs and mismatches by communicating with people who are actually looking for jobs here."
+      }
+    },
+    "conversions": {
+      "card": {
+        "1": {
+          "title": "For Those Who Want To Work At DAOs",
+          "desc": {
+            "1": "The goal of this project is to \"increase the number of indiduals who can make a living from DAOs\".",
+            "2": "Let's jump in JDA and learn with friends, build track records, and get financial freedom."
+          }
+        },
+        "2": {
+          "title": "For Recruiters In DAOs",
+          "desc": "DAOs, investors, managers, and corporate recruiters who are hiring can reduce hiring costs and mismatches by communicating with actual job seekers here."
+        }
+      }
+    }
   }
 }

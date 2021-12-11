@@ -92,8 +92,8 @@ export default {// 404 routing
       '@nuxtjs/i18n',
       {
         locales: [
-          { code: 'ja', name: 'Japanese', iso: 'ja-JP', file: 'ja.json' },
           { code: 'en', name: 'English', iso: 'en-US', file: 'en.json' },
+          { code: 'ja', name: 'Japanese', iso: 'ja-JP', file: 'ja.json' },
         ],
         defaultLocale: 'en',
         langDir: 'locales/',
@@ -104,10 +104,8 @@ export default {// 404 routing
         vueI18nLoader: true,
         lazy: true,
         detectBrowserLanguage: {
-          alwaysRedirect: true,
           fallbackLocale: 'en',
-          useCookie: true,
-          coookieKey: 'i18n_redirected',
+          useCookie: false,
         },
         seo: true,
       },

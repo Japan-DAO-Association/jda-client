@@ -18,10 +18,8 @@
           cols="12" xs="10" sm="10" md="6" lg="6"
           class="about-text"
         >
-          <!-- <p>Japan DAO AssociationはPear to Pearのジョブマッチングコミュニティです。<br /><br />
-          今後新しい組織運営・働き方として一般的になるDAOが集い、新しい働き方を模索する同志が集まる刺激的な場所です。皆様が海外のブロックチェーン業界、DAOで生計を立てることを目指す同志と切磋琢磨し、スキルと実績を積む機会を提供します。</p> -->
-          <NormalText>Japan DAO Association, JDA, is a Pear to Pear Job Matching Community.<br />
-            It's really a stimulating place for people exploring new working styles, because DAOs will be more common as a new way of working and managing organizations and lots of DAOs are joining JDA. JDA provides opportunities to improve your skills and achievements with your friends aiming to make a living in the blockchain companies and DAOs.</NormalText>
+          <NormalText>{{ $t('index.about.desc.1') }}<br />
+            {{ $t('index.about.desc.2') }}</NormalText>
         </v-col>
       </v-row>
     </div>

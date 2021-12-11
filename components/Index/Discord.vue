@@ -7,9 +7,9 @@
           cols="12" xs="10" md="7" lg="7"
           class="my-auto"
         >
-          <NormalText>The purpose of this community is to "increase the number of individuals who can make a living from DAOs".<br />
-          Here, you can learn from like-minded people, build your track record, and achieve financial freedom.<br />
-          Investors, managers, and corporate recruiters can reduce hiring costs and mismatches by communicating with people who are actually looking for jobs here.</NormalText>
+          <NormalText>{{ $t('index.discord.desc.1') }}<br />
+          {{ $t('index.discord.desc.2') }}<br />
+          {{ $t('index.discord.desc.3') }}</NormalText>
         </v-col>
         <v-spacer></v-spacer>
         <v-col

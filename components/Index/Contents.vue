@@ -11,20 +11,26 @@
             sample
           </v-card> -->
           <v-card class="card">
-            <v-card-title class="card-title">Pear to Pearジョブマッチングコミュニティ</v-card-title>
-            <v-card-text class="card-text">“仕事”を介したシナジーが生まれる場所づくりを提供します</v-card-text>
+            <v-card-title class="card-title">Pear to Pear Job Matching Community</v-card-title>
+            <!-- <v-card-title class="card-title">Pear to Pearジョブマッチングコミュニティ</v-card-title> -->
+            <v-card-text class="card-text">Provides a place producing synergy via "jobs"</v-card-text>
+            <!-- <v-card-text class="card-text">“仕事”を介したシナジーが生まれる場所づくりを提供します</v-card-text> -->
           </v-card>
         </v-col>
         <v-col class="service-col">
           <v-card class="card">
-            <v-card-title class="card-title">ブロックチェーンエンジニア育成事業</v-card-title>
-            <v-card-text class="card-text">DAOで生きるブロックチェーンエンジニアの人材育成を行います</v-card-text>
+            <v-card-title class="card-title">Blockchain Engineer Education Project</v-card-title>
+            <!-- <v-card-title class="card-title">ブロックチェーンエンジニア育成事業</v-card-title> -->
+            <v-card-text class="card-text">Educate blockchain engineers who will be active in DAOs</v-card-text>
+            <!-- <v-card-text class="card-text">DAOで生きるブロックチェーンエンジニアの人材育成を行います</v-card-text> -->
           </v-card>
         </v-col>
         <v-col class="service-col">
           <v-card class="card">
-            <v-card-title class="card-title">インフルエンサー育成支援</v-card-title>
-            <v-card-text class="card-text">DAO関連インフルエンサー育成を支援していきます</v-card-text>
+            <v-card-title class="card-title">Influencer Development Support</v-card-title>
+            <!-- <v-card-title class="card-title">インフルエンサー育成支援</v-card-title> -->
+            <v-card-text class="card-text">Support the development of DAO-related influencers </v-card-text>
+            <!-- <v-card-text class="card-text">DAO関連インフルエンサー育成を支援していきます</v-card-text> -->
           </v-card>
         </v-col>
       </v-row>
@@ -43,7 +49,8 @@
         </v-col>
         <v-col class="service-col">
           <v-card class="card">
-            <v-card-title class="card-title">ブロックチェーンプロジェクト支援</v-card-title>
+            <v-card-title class="card-title">Blockchain Project Support</v-card-title>
+            <!-- <v-card-title class="card-title">ブロックチェーンプロジェクト支援</v-card-title> -->
             <v-card-text class="card-text">Coming soon...</v-card-text>
           </v-card>
         </v-col>

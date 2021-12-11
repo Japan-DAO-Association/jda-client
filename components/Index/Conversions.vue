@@ -2,16 +2,20 @@
   <Aos>
     <v-row class="conversion-row">
       <v-col class="conversion-col">
-        <H3>海外DAOで働きたい方へ</H3>
+        <H3>For Those Who Want To Work At DAOs</H3>
+        <!-- <H3>海外DAOで働きたい方へ</H3> -->
         <div class="mx-4 mt-8">
-          <NormalText>このプロジェクトの目的は、『DAOで生計を立てられる個人を増やす』ことです。<br />
-          ここで同じ志を持つ仲間と学び、実績を作り、経済的な自由を獲得しましょう。</NormalText>
+          <NormalText>The goal of this project is to "increase the number of indiduals who can make a living from DAOs".<br />
+          Let's jump in JDA and learn with friends, build track records, and get financial freedom.</NormalText>
+          <!-- <NormalText>このプロジェクトの目的は、『DAOで生計を立てられる個人を増やす』ことです。<br />
+          ここで同じ志を持つ仲間と学び、実績を作り、経済的な自由を獲得しましょう。</NormalText> -->
         </div>
       </v-col>
       <v-col class="conversion-col">
-        <H3>DAOの採用担当者の方へ</H3>
+        <H3>For Recruiters In DAOs and Companies</H3>
         <div class="mx-4 mt-8">
-          <NormalText>採用を実施しているDAOや投資家、経営者、企業の採用担当者の方は、ここで実際に仕事を探す人とコミュニケーションを取ることにより採用コストやミスマッチを減らす事ができます。</NormalText>
+          <NormalText>DAOs, investors, managers, and corporate recruiters who are hiring can reduce hiring costs and mismatches by communicating with actual job seekers here.</NormalText>
+          <!-- <NormalText>採用を実施しているDAOや投資家、経営者、企業の採用担当者の方は、ここで実際に仕事を探す人とコミュニケーションを取ることにより採用コストやミスマッチを減らす事ができます。</NormalText> -->
         </div>
       </v-col>
     </v-row>

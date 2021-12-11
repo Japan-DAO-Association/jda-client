@@ -2,7 +2,8 @@
   <Aos>
     <v-row>
       <v-col>
-        <H3>提携DAOコミュニティ</H3>
+        <H3>Affiliated DAO Communities</H3>
+        <!-- <H3>提携DAOコミュニティ</H3> -->
         <div class="mx-4 mt-8">
           <v-row class="alliance-row">
             <v-col>

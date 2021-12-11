@@ -12,8 +12,8 @@
               class="left-col"
             >
               <img
-                src="@/assets/images/footer-logo.svg"
-                alt="footer logo"
+                src="@/assets/images/jda-logo.svg"
+                alt="jda logo"
               >
               <v-row class="sns-wrapper">
                 <v-col
@@ -48,7 +48,7 @@
                   cols="3"
                 >
                   <a
-                    href="https://medium.com/@"
+                    :href="mediumLink"
                     target="_blank"
                     rel="noopener"
                   >
@@ -90,7 +90,9 @@
 
 <script>
 export default {
-
+  data: () => ({
+    mediumLink: process.env.MEDIUM_ACCOUNT_PAGE,
+  })
 }
 </script>
 

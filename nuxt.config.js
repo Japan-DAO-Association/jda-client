@@ -48,10 +48,7 @@ export default {// 404 routing
     ]
   },
 
-  loading: {
-    color: 'blue',
-    height: '10px',
-  },
+  loading: '~/components/Loading.vue',
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [

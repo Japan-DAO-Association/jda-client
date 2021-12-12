@@ -1,0 +1,99 @@
+<template>
+  <!-- <div
+    v-if="loading"
+    class="loading-container"
+  >
+    <img src="@/assets/images/loading.gif" alt="loading image">
+    <h2 class="loading-text">Loading...</h2>
+  </div> -->
+  <div v-if="loading" class="splash-screen">
+    <div class="spinner-wrapper">
+      <div class="spinner"></div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    loading: false,
+  }),
+  methods: {
+    start() {
+      this.loading = true;
+    },
+    finish() {
+      this.loading = false;
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+// .loading-container {
+//   position: fixed;
+//   top: 0px;
+//   left: 0px;
+//   right: 0px;
+//   bottom: 0px;
+//   width: 100%;
+//   height: 100vh;
+//   z-index: 50;
+//   overflow: hidden;
+//   background-color: rgba(55, 65, 81, 1);
+//   opacity: 0.75;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   .loading-text {
+//     text-align: center;
+//     color: rgba(255, 255, 255, 1);
+//     font-size: 1.25rem /* 20px */;
+//     line-height: 1.75rem /* 28px */;
+//     font-weight: 600;
+//   }
+// }
+.splash-screen {
+  background: rgba(11, 25, 62, 0.8);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 50;
+}
+.spinner-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.spinner {
+  width: 80px;
+  height: 80px;
+  margin: 100px auto;
+  background-color: rgba(88, 128, 235);
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+  animation: sk-scaleout 1s infinite ease-in-out;
+}
+@-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+</style>

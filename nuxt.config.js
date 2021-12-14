@@ -76,6 +76,8 @@ export default {// 404 routing
     'nuxt-animejs',
     // https://github.com/ivodolenc/nuxt-gsap-module
     'nuxt-gsap-module',
+    // https://github.com/nuxt-community/google-analytics-module
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -108,6 +110,10 @@ export default {// 404 routing
       },
     ],
   ],
+
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_ID
+  },
   
   env: {
     // BASE_HOST: process.env.BASE_HOST,
@@ -124,7 +130,9 @@ export default {// 404 routing
   },
 
   publicRuntimeConfig: {
-
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID
+    },
   },
 
   privateRuntimeConfig: {

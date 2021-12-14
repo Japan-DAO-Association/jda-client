@@ -1,7 +1,7 @@
 <template>
   <v-row class="layout">
     <v-col
-      cols="12" xs="12" sm="12" md="12" lg="10"
+      cols="12" xs="12" sm="12" md="12" lg="9"
       class="mx-auto"
     >
       <slot></slot>

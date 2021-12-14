@@ -42,13 +42,18 @@ export default {
       // width: 60%;
       margin: 4px auto;
       p {
-        margin: 0 20%;
+        margin: 0 8%;
       }
     }
     @media (max-width: 600px) {
       // width: 80%;
       p {
         margin: 0 10%;
+      }
+    }
+    @media (max-width: 500px) {
+      p {
+        margin: 0;
       }
     }
   }

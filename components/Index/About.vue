@@ -65,6 +65,9 @@ export default {
   @media (max-width: 500px) {
     height: 168px;
   }
+  @media (max-width: 450px) {
+    height: 148px;
+  }
   @media (max-width: 400px) {
     height: 126px;
   }
@@ -79,10 +82,10 @@ export default {
     margin-top: 10px;
   }
   @media (max-width: 700px) {
-    padding: 0 20%;
+    padding: 0;
   }
   @media (max-width: 600px) {
-    padding: 0 12%;
+    padding: 0 2%;
   }
 }
 </style>

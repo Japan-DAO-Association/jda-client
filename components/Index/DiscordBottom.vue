@@ -3,14 +3,14 @@
     <div class="mx-4 mt-8">
       <v-row class="discord-row">
         <v-col
-          cols="12" xs="10" md="7" lg="7"
+          cols="12" xs="12" sm="10" md="7" lg="7"
           class="my-auto"
         >
           <H3>Want to join our Discord Community?</H3>
         </v-col>
         <v-spacer></v-spacer>
         <v-col
-          cols="12" xs="10" md="3" lg="3"
+          cols="12" xs="12" sm="10" md="3" lg="3"
           class="discord-btn-wrapper"
         >
           <DiscordButton />

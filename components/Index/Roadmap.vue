@@ -6,7 +6,7 @@
         <div class="mx-4 mt-0">
           <v-row class="roadmap-row">
             <v-col
-              class="pl-16"
+              class="pl-16 roadmap-col"
             >
               <Aos
                 v-for="item in items"
@@ -49,16 +49,19 @@ export default {
 
 <style lang="scss" scoped>
 .roadmap-row {
-  .roadmap-aos {
-    width: 60%;
-    @media (max-width: 1600px) {
-      width: 80%;
-    }
-    @media (max-width: 1100px) {
-      width: 90%;
-    }
-    @media (max-width: 800px) {
-      width: 100%;
+  .roadmap-col {
+    padding: 0 !important;
+    .roadmap-aos {
+      width: 60%;
+      @media (max-width: 1600px) {
+        width: 80%;
+      }
+      @media (max-width: 1100px) {
+        width: 90%;
+      }
+      @media (max-width: 800px) {
+        width: 100%;
+      }
     }
   }
 }

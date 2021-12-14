@@ -52,14 +52,23 @@ export default {
   .roadmap-col {
     padding: 0 !important;
     .roadmap-aos {
-      width: 60%;
+      width: 42%;
       @media (max-width: 1600px) {
-        width: 80%;
+        width: 50%;
+      }
+      @media (max-width: 1400px) {
+        width: 58%;
       }
       @media (max-width: 1100px) {
+        width: 66%;
+      }
+      @media (max-width: 980px) {
+        width: 76%;
+      }
+      @media (max-width: 850px) {
         width: 90%;
       }
-      @media (max-width: 800px) {
+      @media (max-width: 600px) {
         width: 100%;
       }
     }

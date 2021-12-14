@@ -44,7 +44,7 @@ export default {// 404 routing
         type: 'text/javascript',
         src: "https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js",
         defer: true,
-      }
+      },
     ]
   },
 
@@ -76,8 +76,6 @@ export default {// 404 routing
     'nuxt-animejs',
     // https://github.com/ivodolenc/nuxt-gsap-module
     'nuxt-gsap-module',
-    // https://github.com/nuxt-community/google-analytics-module
-    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -109,11 +107,19 @@ export default {// 404 routing
         seo: true,
       },
     ],
+    // https://github.com/nuxt-community/google-gtag-module
+    [
+      '@nuxtjs/google-gtag',
+      {
+        id: process.env.GOOGLE_ANALYTICS_MEASUREMENT_ID,
+        // debug: true,
+        config: {
+          anonymize_ip: true,
+          sned_page_view: false,
+        }
+      }
+    ]
   ],
-
-  googleAnalytics: {
-    id: process.env.GOOGLE_ANALYTICS_ID
-  },
   
   env: {
     // BASE_HOST: process.env.BASE_HOST,
@@ -130,9 +136,7 @@ export default {// 404 routing
   },
 
   publicRuntimeConfig: {
-    googleAnalytics: {
-      id: process.env.GOOGLE_ANALYTICS_ID
-    },
+    
   },
 
   privateRuntimeConfig: {

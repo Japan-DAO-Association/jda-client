@@ -18,11 +18,11 @@ jobs:
 
       - name: Install dependencies and Generate static files
         run: yarn && yarn generate
-
+        
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_JDA_CLIENT }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_JDA_CLIENT_A4CFB }}'
           channelId: live
-          projectId: jda-client
+          projectId: jda-client-a4cfb

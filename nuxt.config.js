@@ -32,7 +32,7 @@ export default {// 404 routing
       { hid: 'og:url', property: 'og:url', content: '' },
       { hid: 'og:title', property: 'og:title', content: 'Japan DAO Association' },
       { hid: 'og:description', property: 'og:description', content: 'Japan DAO Association is a Pear to Pear Job Matching Community. The purpose of this community is to increase the number of individuals who can make a living from DAOs.' },
-      { hid: 'og:image', property: 'og:image', content: '画像のURL' },
+      { hid: 'og:image', property: 'og:image', content: '/ogp.png' },
       { name: 'twitter:card', content: 'summary' },
       { name: 'fb:app_id', content: '' },
       { name: 'format-detection', content: 'telephone=no' },

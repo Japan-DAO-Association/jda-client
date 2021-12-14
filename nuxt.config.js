@@ -114,8 +114,8 @@ export default {// 404 routing
         id: process.env.GOOGLE_ANALYTICS_MEASUREMENT_ID,
         // debug: true,
         config: {
-          anonymize_ip: true,
-          sned_page_view: false,
+          // anonymize_ip: true,
+          send_page_view: false,
         }
       }
     ]

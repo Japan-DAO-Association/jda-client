@@ -103,7 +103,7 @@ export default {// 404 routing
           { code: 'ja', name: 'Japanese', iso: 'ja-JP', file: 'ja.json' },
         ],
         defaultLocale: 'en',
-        langDir: 'locales/',
+        langDir: 'assets/locales/',
         strategy: 'no_prefix',
         vueI18n: {
           fallbackLocale: 'en',

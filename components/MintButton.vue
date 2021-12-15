@@ -17,8 +17,13 @@ export default {
     async mint() {
       await this.$emit('reserve');
 
-      callWeb3Modal();
-      // コントラクトとの処理
+      const {
+        account,
+        provider
+      } = await callWeb3Modal();
+      console.log(account);
+      console.log(provider);
+        // コントラクトとの処理
     }
   }
 }

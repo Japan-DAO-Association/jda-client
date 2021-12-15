@@ -157,6 +157,10 @@ export default {// 404 routing
   pwa: {
     manifest: {
       lang: 'en'
+    },
+    icon: {
+      source: '@/assets/images/jda-logo.svg',
+      fileName: 'favicon-32x32.png'
     }
   },
 

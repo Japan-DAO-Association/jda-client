@@ -34,7 +34,7 @@
                   cols="3"
                 >
                   <a
-                    href="https://t.co/SgOht8hbIA"
+                    href="https://discord.com/invite/qacgSuSNYf"
                     target="_blank"
                     rel="noopener"
                   >

@@ -27,7 +27,7 @@
                 >
                 </v-img>
                 <NormalText>{{ article.title }}</NormalText>
-                <NormalText>{{ article.pubDate }}</NormalText>
+                <NormalText class="article-pubdate">{{ article.pubDate }}</NormalText>
               </a>
             </v-col>
           </v-row>
@@ -81,11 +81,6 @@ export default {
   @media (max-width: 950px) {
     justify-content: space-evenly;
   }
-  .article-img {
-    @media (max-width: 950px) {
-      margin: 0 auto;
-    }
-  }
   .article-link {
     &:hover {
       div, p {
@@ -96,6 +91,15 @@ export default {
     }
     @media (max-width: 950px) {
       text-align: center;
+    }
+    .article-img {
+      @media (max-width: 950px) {
+        margin: 0 auto;
+      }
+    }
+    .article-pubdate {
+      font-size: 14px;
+      color: #636B78;
     }
   }
 }

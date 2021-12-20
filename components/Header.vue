@@ -115,6 +115,7 @@ export default {
 .header {
   // background: linear-gradient(180deg, rgba(15, 36, 219, 1) 0%, rgba(40, 99, 232, 0.8) 100%);
   background: #0b193e !important;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.12));
   color: #fff;
   font-weight: 500;
   // overflow: hidden;

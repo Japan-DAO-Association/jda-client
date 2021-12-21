@@ -10,9 +10,11 @@
       <div class="mx-10">
         <Layout><News /></Layout>
         <Layout class="layout about-layout"><About /></Layout>
-        <Layout><Contents /></Layout>
+        <Layout>
+          <Contents />
+          <Conversions />
+        </Layout>
         <!-- <Layout class="layout discord-layout"><Discord /></Layout> -->
-        <!-- <Layout><Conversions /></Layout> -->
         <Layout><Alliances /></Layout>
         <Layout class="layout roadmap-layout"><Roadmap /></Layout>
         <!-- <Layout class="layout discord-layout discord-bottom-layout"><DiscordBottom /></Layout> -->
@@ -29,7 +31,7 @@ import News from '@/components/Index/News';
 import About from '@/components/Index/About';
 import Contents from '@/components/Index/Contents';
 // import Discord from '@/components/Index/Discord';
-// import Conversions from '@/components/Index/Conversions';
+import Conversions from '@/components/Index/Conversions';
 import Alliances from '@/components/Index/Alliances';
 import Roadmap from '@/components/Index/Roadmap';
 // import DiscordBottom from '@/components/Index/DiscordBottom';
@@ -42,7 +44,7 @@ export default {
     About,
     Contents,
     // Discord,
-    // Conversions,
+    Conversions,
     Alliances,
     Roadmap,
     // DiscordBottom,

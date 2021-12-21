@@ -10,16 +10,28 @@
     "contents": {
       "card": {
         "1": {
-          "title": "Pear to Pear Job Matching Community",
-          "desc": "Provides a place producing synergy via \"jobs\""
+          "title": "DAOs to DAOs Community",
+          "desc": "We will create stronger services and experiences that have never been seen before, such as cross-industry collaborations."
         },
         "2": {
-          "title": "Blockchain Engineer Education Project",
-          "desc": "Educate blockchain engineers who will be active in DAOs"
+          "title": "P2P Job Matching",
+          "desc": "The job matching business provides a place where recruiters can directly match with engineers and creators."
         },
         "3": {
-          "title": "Influencer Development Support",
-          "desc": "Support the development of DAO-related influencers"
+          "title": "Training and Support of Talents",
+          "desc": {
+            "1": "Blockchain Engineer",
+            "2": "Influencer/KOL",
+            "3": "Community Manager"
+          }
+        },
+        "4": {
+          "title": "Marketing Support",
+          "desc": "We will provide affiliated DAOs and individuals with marketing support utilizing our growing community."
+        },
+        "5": {
+          "title": "Web3.0 Project Incubator",
+          "desc": "By sharing our extraordinary knowledge, we will support worthwhile projects in the Web3.0 era."
         }
       }
     },
@@ -33,14 +45,14 @@
     "conversions": {
       "card": {
         "1": {
-          "title": "For Those Who Want To Work At DAOs",
+          "title": "For Those Who Want to Work at DAOs",
           "desc": {
-            "1": "The goal of this project is to \"increase the number of indiduals who can make a living from DAOs\".",
-            "2": "Let's jump in JDA and learn with friends, build track records, and get financial freedom."
+            "1": "The purpose of this project is to \"increase the number of indiduals who can make a living from DAOs\".",
+            "2": "Let's learn with friends, build track records, and get financial freedom."
           }
         },
         "2": {
-          "title": "For Recruiters In DAOs And Companies",
+          "title": "For Recruiters in DAOs and Companies",
           "desc": "DAOs, investors, managers, and corporate recruiters who are hiring can reduce hiring costs and mismatches by communicating with actual job seekers here."
         }
       }

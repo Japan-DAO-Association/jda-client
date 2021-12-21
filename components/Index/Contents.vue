@@ -2,50 +2,97 @@
   <Aos>
     <H3>Contents</H3>
     <div class="mx-4 mt-8">
-      <v-row class="service-row">
-        <v-col class="service-col">
-          <!-- <v-card
-            v-for="item in items"
-            :key="item.title"
-          >
-            sample
-          </v-card> -->
+      <v-row
+        justify="center"
+        class="service-row"
+      >
+        <v-col
+          cols="12" xs="11" sm="6" md="4" lg="4"
+          class="service-col"
+        >
           <v-card class="card">
+            <div
+              class="text-center"
+            >
+              <img
+                src="@/assets/images/contents-earth.svg"
+                alt="content image"
+              >
+            </div>
             <v-card-title class="card-title">{{ $t('index.contents.card.1.title') }}</v-card-title>
             <v-card-text class="card-text">{{ $t('index.contents.card.1.desc') }}</v-card-text>
           </v-card>
         </v-col>
-        <v-col class="service-col">
+        <v-col
+          cols="12" xs="11" sm="6" md="4" lg="4"
+          class="service-col"
+        >
           <v-card class="card">
+            <div
+              class="text-center"
+            >
+              <img
+                src="@/assets/images/contents-people.svg"
+                alt="content image"
+              >
+            </div>
             <v-card-title class="card-title">{{ $t('index.contents.card.2.title') }}</v-card-title>
             <v-card-text class="card-text">{{ $t('index.contents.card.2.desc') }}</v-card-text>
           </v-card>
         </v-col>
-        <v-col class="service-col">
+        <v-col
+          cols="12" xs="11" sm="6" md="4" lg="4"
+          class="service-col"
+        >
           <v-card class="card">
+            <div
+              class="text-center"
+            >
+              <img
+                src="@/assets/images/contents-pencil.svg"
+                alt="content image"
+              >
+            </div>
             <v-card-title class="card-title">{{ $t('index.contents.card.3.title') }}</v-card-title>
-            <v-card-text class="card-text">{{ $t('index.contents.card.3.desc') }} </v-card-text>
+            <v-card-text class="card-text">
+              {{ $t('index.contents.card.3.desc.1') }}<br />
+              {{ $t('index.contents.card.3.desc.2') }}<br />
+              {{ $t('index.contents.card.3.desc.3') }}
+            </v-card-text>
           </v-card>
         </v-col>
-      </v-row>
-      <v-row class="service-row">
-        <v-col class="service-col">
+        <v-col
+          cols="12" xs="11" sm="6" md="4" lg="4"
+          class="service-col"
+        >
           <v-card class="card">
-            <v-card-title class="card-title">NFT</v-card-title>
-            <v-card-text class="card-text">Coming soon...</v-card-text>
+            <div
+              class="text-center"
+            >
+              <img
+                src="@/assets/images/contents-note.svg"
+                alt="content image"
+              >
+            </div>
+            <v-card-title class="card-title">{{ $t('index.contents.card.4.title') }}</v-card-title>
+            <v-card-text class="card-text">{{ $t('index.contents.card.4.desc') }}</v-card-text>
           </v-card>
         </v-col>
-        <v-col class="service-col">
+        <v-col
+          cols="12" xs="11" sm="6" md="4" lg="4"
+          class="service-col"
+        >
           <v-card class="card">
-            <v-card-title class="card-title">Utility Token</v-card-title>
-            <v-card-text class="card-text">Coming soon...</v-card-text>
-          </v-card>
-        </v-col>
-        <v-col class="service-col">
-          <v-card class="card">
-            <v-card-title class="card-title">Blockchain Project Support</v-card-title>
-            <!-- <v-card-title class="card-title">ブロックチェーンプロジェクト支援</v-card-title> -->
-            <v-card-text class="card-text">Coming soon...</v-card-text>
+            <div
+              class="text-center"
+            >
+              <img
+                src="@/assets/images/contents-hexagon.svg"
+                alt="content image"
+              >
+            </div>
+            <v-card-title class="card-title">{{ $t('index.contents.card.5.title') }}</v-card-title>
+            <v-card-text class="card-text">{{ $t('index.contents.card.5.desc') }}</v-card-text>
           </v-card>
         </v-col>
       </v-row>
@@ -67,36 +114,35 @@ export default {
 
 <style lang="scss" scoped>
 .service-row {
-  @media (max-width: 700px) {
-    display: block;
-  }
   .service-col {
-    @media (max-width: 700px) {
-      width: 60%;
-      margin: 4px auto;
-    }
-    @media (max-width: 600px) {
-      width: 80%;
-    }
-    @media (max-width: 500px) {
-      width: 100%;
-    }
     .card {
-      height: 244px;
+      width: 384px;
+      height: 368px;
       padding: 16px 10px;
-      background: rgba(255, 255, 255, 0.9);
+      background: #fff;
       border: 1px solid #FFFFFF;
       box-sizing: border-box;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
       border-radius: 16px;
-      @media (max-width: 960px) {
-        padding: 10px 6px;
+      @media (max-width: 1550px) {
+        height: 430px;
       }
-      @media (max-width: 700px) {
-        height: 200px;
+      @media (max-width: 959.9px) {
+        padding: 10px 6px;
+        height: 328px;
+      }
+      @media (max-width: 770px) {
+        height: 396px;
+      }
+      @media (max-width: 600px) {
+        height: 345px;
+        margin: 0 auto;
       }
       @media (max-width: 580px) {
         padding: 2px 6px;
+      }
+      @media (max-width: 420px) {
+        height: 370px;
       }
       .card-title {
         font-family: "Noto Sans CJK JP";
@@ -118,7 +164,7 @@ export default {
         font-size: 18px;
         line-height: 26px;
         color: #636B78;
-        @media (max-width: 960px) {
+        @media (max-width: 959.9px) {
           font-size: 16px;
           line-height: 24px;
         }

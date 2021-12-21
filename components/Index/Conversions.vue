@@ -1,20 +1,33 @@
 <template>
   <Aos>
-    <v-row class="conversion-row">
-      <v-col class="conversion-col">
-        <H3>{{ $t('index.conversions.card.1.title') }}</H3>
-        <div class="mx-4 mt-8">
-          <NormalText>{{ $t('index.conversions.card.1.desc.1') }}<br />
-          {{ $t('index.conversions.card.1.desc.2') }}</NormalText>
-        </div>
-      </v-col>
-      <v-col class="conversion-col">
-        <H3>{{ $t('index.conversions.card.2.title') }}</H3>
-        <div class="mx-4 mt-8">
-          <NormalText>{{ $t('index.conversions.card.2.desc') }}</NormalText>
-        </div>
-      </v-col>
-    </v-row>
+    <v-card
+      class="card mt-16 px-8 pb-8"
+    >
+      <v-row
+        justify="space-around"
+        class="conversion-row"
+      >
+        <v-col
+          cols="12" xs="11" sm="10" md="6" lg="5"
+          class="conversion-col"
+        >
+          <H3 class="conversion-title">{{ $t('index.conversions.card.1.title') }}</H3>
+          <div>
+            <NormalText>{{ $t('index.conversions.card.1.desc.1') }}<br />
+            {{ $t('index.conversions.card.1.desc.2') }}</NormalText>
+          </div>
+        </v-col>
+        <v-col
+          cols="12" xs="11" sm="10" md="6" lg="5"
+          class="conversion-col"
+        >
+          <H3 class="conversion-title">{{ $t('index.conversions.card.2.title') }}</H3>
+          <div>
+            <NormalText>{{ $t('index.conversions.card.2.desc') }}</NormalText>
+          </div>
+        </v-col>
+      </v-row>
+    </v-card>
   </Aos>
 </template>
 
@@ -33,27 +46,38 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.conversion-row {
-  @media (max-width: 700px) {
-    display: block;
+.card {
+  border-radius: 16px;
+  @media (max-width: 599.9px) {
+    margin: 64px auto 0;
+    width: 384px;
   }
-  .conversion-col {
-    @media (max-width: 700px) {
-      // width: 60%;
-      margin: 4px auto;
-      p {
-        margin: 0 8%;
+  @media (max-width: 500px) {
+    width: 93%;
+  }
+  @media (max-width: 420px) {
+    width: 92%;
+  }
+  .conversion-row {
+    .conversion-col {
+      @media (max-width: 500px) {
+        h3 {
+          margin: 0 2%;
+          font-size: 22px !important;
+        }
+        p {
+          margin: 0 4%;
+          font-size: 16px;
+          line-height: 26px;
+        }
       }
-    }
-    @media (max-width: 600px) {
-      // width: 80%;
-      p {
-        margin: 0 10%;
+      .conversion-title, p {
+        color: #0b193e;
       }
-    }
-    @media (max-width: 500px) {
-      p {
-        margin: 0;
+      .conversion-title {
+        @media (max-width: 959.9px) {
+          margin-bottom: 20px !important;
+        }
       }
     }
   }

@@ -7,19 +7,25 @@
         <div class="mx-4 mt-8">
           <v-row class="alliance-row">
             <v-col>
-              <v-card class="card">
-                <v-card-title class="card-title">ブロックチェーン研究所</v-card-title>
-              </v-card>
+              <div class="card-border">
+                <v-card class="card">
+                  <v-card-title class="card-title">ブロックチェーン研究所</v-card-title>
+                </v-card>
+              </div>
             </v-col>
             <v-col>
-              <v-card class="card">
-                <v-card-title class="card-title">Soundan NFT</v-card-title>
-              </v-card>
+              <div class="card-border">
+                <v-card class="card">
+                  <v-card-title class="card-title">Soundan NFT</v-card-title>
+                </v-card>
+              </div>
             </v-col>
             <v-col>
-              <v-card class="card">
-                <v-card-title class="card-title">DfinityJP</v-card-title>
-              </v-card>
+              <div class="card-border">
+                <v-card class="card">
+                  <v-card-title class="card-title">DfinityJP</v-card-title>
+                </v-card>
+              </div>
             </v-col>
           </v-row>
         </div>
@@ -45,16 +51,21 @@ export default {
   @media (max-width: 600px) {
     display: block;
   }
-  .card {
-    background: #0A2942;
+  .card-border {
+    background: linear-gradient(to right, #467de7, #da46e7);
+    padding: 2px;
     border-radius: 24px;
-    text-align: center;
-    .card-title {
-      display: inline-block;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 30px;
-      color: #fff;
+    .card {
+      background: #0A2942;
+      border-radius: 24px;
+      text-align: center;
+      .card-title {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 30px;
+        color: #fff;
+      }
     }
   }
 }

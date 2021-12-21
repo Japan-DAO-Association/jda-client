@@ -90,7 +90,7 @@ export default {
         line-height: 34px;
       }
       @media (max-width: 440px) {
-        font-size: 38px;
+        font-size: 32px;
       }
     }
     .hero-text-h3 {

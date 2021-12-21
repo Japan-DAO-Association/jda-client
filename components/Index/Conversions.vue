@@ -47,7 +47,7 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-  border-radius: 16px;
+  border-radius: 16px !important;
   @media (max-width: 599.9px) {
     margin: 64px auto 0;
     width: 384px;

@@ -100,7 +100,6 @@ export default {
     vertical-align: middle;
     @media (max-width: 500px) {
       font-size: 14px;
-      text-align: center;
     }
   }
 }
@@ -113,8 +112,7 @@ export default {
     margin: 0 2%;
   }
   @media (max-width: 500px) {
-    font-size: 14px;
-    text-align: center;
+    font-size: 14px !important;
   }
 }
 </style>

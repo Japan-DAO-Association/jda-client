@@ -9,13 +9,13 @@
       <HeroArea />
       <div class="mx-10">
         <Layout><News /></Layout>
-        <Layout><About /></Layout>
+        <Layout class="layout about-layout"><About /></Layout>
         <Layout><Contents /></Layout>
-        <Layout class="discord-layout"><Discord /></Layout>
+        <Layout class="layout discord-layout"><Discord /></Layout>
         <Layout><Conversions /></Layout>
         <Layout><Alliances /></Layout>
         <Layout><Roadmap /></Layout>
-        <Layout class="discord-layout discord-bottom-layout"><DiscordBottom /></Layout>
+        <Layout class="layout discord-layout discord-bottom-layout"><DiscordBottom /></Layout>
       </div>
     </v-col>
   </v-row>
@@ -75,8 +75,7 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   background: rgba(11, 25, 62, 1);
-  .discord-layout {
-    background: #fff;
+  .layout {
     width: 110%;
     margin-left: -5%;
     padding: 3.4% 5%;
@@ -90,6 +89,12 @@ export default {
       margin-left: -15%;
       padding: 3.4% 15%;
     }
+  }
+  .about-layout {
+    background: linear-gradient(128.39deg, #4782DA -0.3%, #713BE4 38.36%, #CF4848 100%);
+  }
+  .discord-layout {
+    background: #fff;
   }
   .discord-bottom-layout {
     margin-bottom: 0 !important;

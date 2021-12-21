@@ -1,26 +1,45 @@
 <template>
   <Aos>
-    <H3>About</H3>
+    <H3 class="text-center">About</H3>
     <div class="mx-4 mt-8">
       <v-row>
         <v-col
-          cols="12" xs="10" sm="10" md="5" lg="5"
-          class="img-wrapper"
+          cols="12" xs="11" sm="10" md="6" lg="6"
+          class="image-wrapper"
         >
           <img
-            src="@/assets/images/about.png" 
-            alt="JDA Symbol"
-            class="symbol-img"
-          >
+            src="@/assets/images/about-circle.svg"
+            alt="about image"
+            class="about-image"
+          />
         </v-col>
-        <v-spacer class="spacer"></v-spacer>
         <v-col
-          cols="12" xs="10" sm="10" md="6" lg="6"
-          class="about-text"
+          cols="12" xs="11" sm="10" md="6" lg="6"
+          class="text-wrapper"
         >
-          <NormalText>{{ $t('index.about.desc.1') }}<br />
-            {{ $t('index.about.desc.2') }}</NormalText>
+          <NormalText class="text">{{ $t('index.about.desc.1') }}</NormalText>
         </v-col>
+      </v-row>
+      <v-row>
+        <v-col
+          cols="12" xs="11" sm="10" md="6" lg="6"
+          class="text-wrapper"
+        >
+          <NormalText class="text">{{ $t('index.about.desc.2') }}</NormalText>
+        </v-col>
+        <v-col
+          cols="12" xs="11" sm="10" md="6" lg="6"
+          class="image-wrapper"
+        >
+          <img
+            src="@/assets/images/about-ring.svg"
+            alt="about image"
+            class="about-image"
+          />
+        </v-col>
+      </v-row>
+      <v-row>
+          <NormalText class="about-text-bottom my-12">{{ $t('index.about.desc.3') }}</NormalText>
       </v-row>
     </div>
   </Aos>
@@ -41,51 +60,61 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.img-wrapper, .about-text {
-  @media (max-width: 960px) {
-    margin: 0 auto;
-  }
-}
-.symbol-img {
-  height: 224px;
-  @media (max-width: 1600px) {
-    height: 196px;
-  }
-  @media (max-width: 1400px) {
-    height: 178px;
-  }
-  @media (max-width: 1050px) {
-    height: 164px;
-  }
-  @media (max-width: 950px) {
-    display: block;
-    margin: 0 auto;
-    height: 200px;
-  }
-  @media (max-width: 500px) {
-    height: 168px;
-  }
-  @media (max-width: 450px) {
-    height: 148px;
-  }
-  @media (max-width: 400px) {
-    height: 126px;
-  }
-}
-.spacer {
-  @media (max-width: 950px) {
+.image-wrapper {
+  @media (max-width: 959.9px) {
     display: none;
   }
+  .about-image {
+    max-width: 95%;
+  }
 }
-.about-text {
-  @media (max-width: 950px) {
-    margin-top: 10px;
+.text-wrapper {
+  display: table;
+  @media (max-width: 959.9px) {
+    margin: 0 auto;
+    padding-top: 6%;
+    padding-bottom: 6%;
   }
-  @media (max-width: 700px) {
-    padding: 0;
+  &:nth-of-type(2) {
+    @media (max-width: 959.9px) {
+      background-image: url('@/assets/images/about-circle.svg');
+      background-size: auto 80%;
+      background-position: 25% 50%;
+    }
+    @media (max-width: 500px) {
+      background-size: auto 60%;
+    }
   }
-  @media (max-width: 600px) {
-    padding: 0 2%;
+  &:nth-of-type(1) {
+    @media (max-width: 959.9px) {
+      background-image: url('@/assets/images/about-ring.svg');
+      background-size: auto 60%;
+      background-position: 75% 50%;
+    }
+    @media (max-width: 500px) {
+      background-size: auto 38%;
+    }
+  }
+  .text {
+    display: table-cell;
+    vertical-align: middle;
+    @media (max-width: 500px) {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
+.about-text-bottom {
+  margin: 0 14%;
+  @media (max-width: 959.9px) {
+    margin: 0 10%;
+  }
+  @media (max-width: 599.9px) {
+    margin: 0 2%;
+  }
+  @media (max-width: 500px) {
+    font-size: 14px;
+    text-align: center;
   }
 }
 </style>

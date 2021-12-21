@@ -2,8 +2,9 @@
   "index": {
     "about": {
       "desc": {
-        "1": "Japan DAO Association, JDA, is a Pear to Pear Job Matching Community.",
-        "2": "It's a stimulating place for people exploring new working styles, because DAOs will be more common as a new way of working and managing organizations and lots of DAOs are joining JDA. JDA provides opportunities to improve your skills and achievements with your friends aiming to make a living in the blockchain companies and DAOs."
+        "1": "Japan DAO Association, JDA, is a DAO-based job matching platform that directly connects DAOs with DAOs, providing engineers, creators, marketers, and investors with many encounters and quick business opportunities that transcend job boundaries and positions.",
+        "2": "Our proposal to the talent shortage in the blockchain industry is to utilize decentralized organizations on the Polygon and Dfinity blockchains that provide workers, especially creators and engineers, with the skills and practice to be active in DAOs. It also provides an opportunity to develop good community managers and influencers, which is in short supply in the industry.",
+        "3": "JDA will become a place where many individuals and organizations can meet through JDA or use it as a hub to create and collaborate on business at a speed that conventional organizations cannot."
       }
     },
     "contents": {

@@ -17,6 +17,7 @@
         <!-- <Layout class="layout discord-layout"><Discord /></Layout> -->
         <Layout><Alliances /></Layout>
         <Layout class="layout roadmap-layout"><Roadmap /></Layout>
+        <Message />
         <!-- <Layout class="layout discord-layout discord-bottom-layout"><DiscordBottom /></Layout> -->
       </div>
     </v-col>
@@ -34,6 +35,7 @@ import Contents from '@/components/Index/Contents';
 import Conversions from '@/components/Index/Conversions';
 import Alliances from '@/components/Index/Alliances';
 import Roadmap from '@/components/Index/Roadmap';
+import Message from '@/components/Index/Message';
 // import DiscordBottom from '@/components/Index/DiscordBottom';
 
 export default {
@@ -47,6 +49,7 @@ export default {
     Conversions,
     Alliances,
     Roadmap,
+    Message,
     // DiscordBottom,
   },
   mounted() {

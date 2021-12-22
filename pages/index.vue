@@ -6,7 +6,7 @@
   >
     <v-col cols="12" class="pb-0">
       <HeroArea />
-      <div class="mx-10">
+      <div class="mx-10 pb-8">
         <Layout><News /></Layout>
         <Layout class="layout about-layout"><About /></Layout>
         <Layout>

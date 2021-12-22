@@ -12,11 +12,11 @@
               :key="item.name"
               cols="12" xs="12" sm="6" md="4" lg="4"
             >
-              <div class="card-border">
+              <GradientBorder class="card-border">
                 <v-card class="card">
                   <v-card-title class="card-title">{{ item.name }}</v-card-title>
                 </v-card>
-              </div>
+              </GradientBorder>
             </v-col>
           </v-row>
         </div>
@@ -28,11 +28,13 @@
 <script>
 import Aos from '@/components/Aos';
 import H3 from '@/components/Font/H3';
+import GradientBorder from '@/components/GradientBorder';
 
 export default {
   components: {
     Aos,
     H3,
+    GradientBorder,
   },
   data: () => ({
     items: [
@@ -57,12 +59,7 @@ export default {
 
 <style lang="scss" scoped>
 .alliance-row {
-  // @media (max-width: 600px) {
-  //   display: block;
-  // }
   .card-border {
-    background: linear-gradient(to right, #467de7, #da46e7);
-    padding: 2px;
     border-radius: 24px;
     .card {
       background: #0A2942;

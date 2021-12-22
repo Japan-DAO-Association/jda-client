@@ -14,7 +14,7 @@
         </h2>
         <H3 class="hero-text hero-text-h3">Realizing the Next Generation of Work with DAO<br />To live our oun life</H3>
       </div>
-      <DiscordHeroArea class="discord-heroarea" />
+      <DiscordArea />
     </v-col>
   </v-row>
 </template>
@@ -22,13 +22,13 @@
 <script>
 import Textra from '@/components/Font/Textra';
 import H3 from '@/components/Font/H3';
-import DiscordHeroArea from '@/components/Index/DiscordHeroArea';
+import DiscordArea from '@/components/Index/DiscordArea';
 
 export default {
   components: {
     Textra,
     H3,
-    DiscordHeroArea,
+    DiscordArea,
   },
   data () {
     return {
@@ -97,22 +97,6 @@ export default {
       @media(max-width: 580px) {
         font-size: 26px !important;
       }
-    }
-  }
-  .discord-heroarea {
-    position: absolute;
-    bottom: 10%;
-    width: 100%;
-    padding: 0 28%;
-    @media (max-width: 1400px) {
-      padding: 0 20%;
-    }
-    @media (max-width: 1100px) {
-      bottom: 8%;
-      padding: 0 16%;
-    }
-    @media (max-width: 580px) {
-      display: none;
     }
   }
 }

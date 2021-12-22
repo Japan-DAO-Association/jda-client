@@ -21,5 +21,6 @@ module.exports = {
     'vue/multi-word-component-names': 'off',
     'vue/first-attribute-linebreak': 'off',
     'vue/no-reserved-props': 'off',
+    'vue/no-lone-template': 'off',
   }
 }

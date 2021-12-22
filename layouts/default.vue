@@ -9,12 +9,22 @@
         <Nuxt />
       </v-container>
     </v-main>
+    <!-- <template>
+      <cursor-fx
+        ref="cursor"
+        color="#000"
+        color-hover="#000"
+      />
+    </template> -->
     <Footer />
   </v-app>
 </template>
 
 <script>
 export default {
+  components: {
+    
+  }
 }
 </script>
 

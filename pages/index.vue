@@ -15,7 +15,20 @@
         </Layout>
         <!-- <Layout class="layout discord-layout"><Discord /></Layout> -->
         <Layout><Alliances /></Layout>
-        <Layout class="layout roadmap-layout"><Roadmap /></Layout>
+        <Layout class="layout roadmap-layout">
+          <v-row>
+            <v-col
+              cols="1" xs="1" sm="1" md="1" lg="1"
+              class="white-border"
+            >
+            </v-col>
+            <v-col
+            cols="11" xs="11" sm="11" md="11" lg="11"
+            >
+              <Roadmap />
+            </v-col>
+          </v-row>
+        </Layout>
         <Message />
         <!-- <Layout class="layout discord-layout discord-bottom-layout"><DiscordBottom /></Layout> -->
       </div>
@@ -103,6 +116,35 @@ export default {
   .roadmap-layout {
     background: linear-gradient(180deg, #467DE7 -0.03%, #DA46E7 100%);
     margin-bottom: 0 !important;
+    display: flex;
+    overflow: hidden;
+    @media (max-width: 500px) {
+      padding-right: 0;
+    }
+    @media (max-width: 400px) {
+      padding-left: 0;
+    }
+    .white-border {
+      height: 1224px;
+      margin-top: -4.5%;
+      margin-bottom: -4.5%;
+      border-right: 4px solid #fff;
+      @media (max-width: 1500px) {
+        height: 1176px;
+      }
+      @media (max-width: 1100px) {
+        height: 1044px;
+      }
+      @media (max-width: 899.9px) {
+        height: 856px;
+      }
+      @media (max-width: 580px) {
+        height: 732px;
+      }
+      @media (max-width: 500px) {
+        height: 772px;
+      }
+    }
   }
   .discord-bottom-layout {
     margin-bottom: 0 !important;

@@ -14,7 +14,7 @@
         </h2>
         <H3 class="hero-text hero-text-h3">Realizing the Next Generation of Work with DAO<br />To live our oun life</H3>
       </div>
-      <DiscordArea />
+      <DiscordArea class="hero-discord-area" />
     </v-col>
   </v-row>
 </template>
@@ -97,6 +97,11 @@ export default {
       @media(max-width: 580px) {
         font-size: 26px !important;
       }
+    }
+  }
+  .hero-discord-area {
+    @media (max-width: 400px) {
+      display: none;
     }
   }
 }

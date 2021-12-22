@@ -73,7 +73,7 @@
                   </a>
                 </v-col>
               </v-row>
-              <small class="copyright">&copy; 2021 Japan DAO Foundation.</small>
+              <small class="copyright">&copy; 2021 Japan DAO Association.</small>
             </v-col>
           </v-row>
         </v-col>

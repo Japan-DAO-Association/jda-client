@@ -31,7 +31,7 @@
           {{ linkTexts[0].text }}
         </v-btn>
       </a> -->
-      <nuxt-link 
+      <!-- <nuxt-link 
         to="/mint-nft"
       >
         <v-btn
@@ -40,7 +40,7 @@
         >
           {{ linkTexts[1].text }}
         </v-btn>
-      </nuxt-link>
+      </nuxt-link> -->
     </div>
     <v-app-bar-nav-icon
       class="burger"

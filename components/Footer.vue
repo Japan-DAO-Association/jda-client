@@ -81,7 +81,24 @@
         <v-col
           cols="12" xs="10" sm="7" md="7" lg="7"
         >
-          <p>right content</p>
+          <v-row>
+            <v-col>
+              <a
+                href="whitepaper-en.pdf"
+                target="_blank"
+                rel="noopener"
+              >
+                <NormalText class="footer-font">{{ $t('footer.whitepaper.en') }}</NormalText>
+              </a>
+              <a
+                href="whitepaper-ja.pdf"
+                target="_blank"
+                rel="noopener"
+              >
+                <NormalText class="footer-font">{{ $t('footer.whitepaper.ja') }}</NormalText>
+              </a>
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
     </FooterLayout>
@@ -89,7 +106,12 @@
 </template>
 
 <script>
+import NormalText from '@/components/Font/NormalText';
+
 export default {
+  components: {
+    NormalText,
+  },
   data: () => ({
     mediumLink: process.env.MEDIUM_ACCOUNT_PAGE,
   })
@@ -122,6 +144,9 @@ export default {
         bottom: 10px;
       }
     }
+  }
+  .footer-font {
+    font-weight: normal !important;
   }
 }
 </style>

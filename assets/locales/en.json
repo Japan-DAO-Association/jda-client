@@ -57,5 +57,11 @@
         }
       }
     }
+  },
+  "footer": {
+    "whitepaper": {
+      "en": "WhitePaper (English)",
+      "ja": "WhitePaper (Japanese)"
+    }
   }
 }

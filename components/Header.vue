@@ -42,10 +42,10 @@
         </v-btn>
       </nuxt-link> -->
     </div>
-    <v-app-bar-nav-icon
+    <!-- <v-app-bar-nav-icon
       class="burger"
       @click.stop="drawer = !drawer"
-    ></v-app-bar-nav-icon>
+    ></v-app-bar-nav-icon> -->
     <v-navigation-drawer
       v-model="drawer"
       absolute

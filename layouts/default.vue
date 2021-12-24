@@ -22,8 +22,10 @@
 
 <script>
 export default {
-  components: {
-    
+  mounted() {
+    this.$nextTick(() => {
+      setTimeout(() => this.$nuxt.$loading.finish(), 500)
+    });
   }
 }
 </script>

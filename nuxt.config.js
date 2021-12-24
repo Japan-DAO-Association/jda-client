@@ -70,6 +70,7 @@ export default {// 404 routing
   plugins: [
     '@/plugins/aos.js',
     { src: '@/plugins/cursorfx.js', ssr: false },
+    { src: '@/plugins/vuetyper.js', ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

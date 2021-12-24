@@ -3,13 +3,6 @@
     <v-col cols="12" class="">
       <div class="hero-text-wrap">
         <h2 class="hero-text hero-text-h2">
-          <!-- <Textra
-            :data="words"
-            :timer="2"
-            :infinite="true"
-            filter="flash"
-            class="textra"
-          ></Textra> -->
           <vue-typer
             :text="words"
             pre-type-delay='1000'
@@ -29,13 +22,11 @@
 </template>
 
 <script>
-// import Textra from '@/components/Font/Textra';
 import H3 from '@/components/Font/H3';
 import DiscordArea from '@/components/Index/DiscordArea';
 
 export default {
   components: {
-    // Textra,
     H3,
     DiscordArea,
   },

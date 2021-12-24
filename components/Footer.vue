@@ -90,13 +90,13 @@
               >
                 <NormalText class="footer-font">{{ $t('footer.whitepaper.en') }}</NormalText>
               </a>
-              <a
+              <!-- <a
                 href="whitepaper-ja.pdf"
                 target="_blank"
                 rel="noopener"
               >
                 <NormalText class="footer-font">{{ $t('footer.whitepaper.ja') }}</NormalText>
-              </a>
+              </a> -->
             </v-col>
           </v-row>
         </v-col>

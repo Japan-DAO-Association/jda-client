@@ -83,13 +83,13 @@
         >
           <v-row>
             <v-col>
-              <a
+              <!-- <a
                 href="whitepaper-en.pdf"
                 target="_blank"
                 rel="noopener"
-              >
+              > -->
                 <NormalText class="footer-font">{{ $t('footer.whitepaper.en') }}</NormalText>
-              </a>
+              <!-- </a> -->
               <!-- <a
                 href="whitepaper-ja.pdf"
                 target="_blank"

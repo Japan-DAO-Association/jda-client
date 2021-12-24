@@ -5,10 +5,10 @@
         <h2 class="hero-text hero-text-h2">
           <vue-typer
             :text="words"
-            pre-type-delay='1000'
-            type-delay='70'
-            pre-erase-delay='2200'
-            erase-delay='100'
+            pre-type-delay='700'
+            type-delay='50'
+            pre-erase-delay='1800'
+            erase-delay='70'
             erase-style='backspace'
             caret-animation='smooth'
           ></vue-typer>

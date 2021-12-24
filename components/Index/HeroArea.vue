@@ -12,7 +12,7 @@
           ></Textra>
           with DAO
         </h2>
-        <H3 class="hero-text hero-text-h3">Realizing the Next Generation of Work with DAO<br />To live our oun life</H3>
+        <H3 class="hero-text hero-text-h3">Realizing the Next Generation of Work with DAO<br />To live our own life</H3>
       </div>
       <DiscordArea class="hero-discord-area" />
     </v-col>

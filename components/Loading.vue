@@ -1,11 +1,4 @@
 <template>
-  <!-- <div
-    v-if="loading"
-    class="loading-container"
-  >
-    <img src="@/assets/images/loading.gif" alt="loading image">
-    <h2 class="loading-text">Loading...</h2>
-  </div> -->
   <div v-if="loading" class="splash-screen">
     <div class="spinner-wrapper">
       <div class="spinner"></div>
@@ -30,30 +23,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// .loading-container {
-//   position: fixed;
-//   top: 0px;
-//   left: 0px;
-//   right: 0px;
-//   bottom: 0px;
-//   width: 100%;
-//   height: 100vh;
-//   z-index: 50;
-//   overflow: hidden;
-//   background-color: rgba(55, 65, 81, 1);
-//   opacity: 0.75;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   .loading-text {
-//     text-align: center;
-//     color: rgba(255, 255, 255, 1);
-//     font-size: 1.25rem /* 20px */;
-//     line-height: 1.75rem /* 28px */;
-//     font-weight: 600;
-//   }
-// }
 .splash-screen {
   background: rgba(11, 25, 62, 0.8);
   width: 100vw;

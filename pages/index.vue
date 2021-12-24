@@ -13,7 +13,6 @@
           <Contents />
           <Conversions />
         </Layout>
-        <!-- <Layout class="layout discord-layout"><Discord /></Layout> -->
         <Layout><Alliances /></Layout>
         <Layout class="layout roadmap-layout">
           <v-row>
@@ -30,25 +29,21 @@
           </v-row>
         </Layout>
         <Message />
-        <!-- <Layout class="layout discord-layout discord-bottom-layout"><DiscordBottom /></Layout> -->
       </div>
     </v-col>
   </v-row>
 </template>
 
 <script>
-// import Net from 'vanta/src/vanta.net';
 import Layout from '@/components/Layout';
 import HeroArea from '@/components/Index/HeroArea';
 import News from '@/components/Index/News';
 import About from '@/components/Index/About';
 import Contents from '@/components/Index/Contents';
-// import Discord from '@/components/Index/Discord';
 import Conversions from '@/components/Index/Conversions';
 import Alliances from '@/components/Index/Alliances';
 import Roadmap from '@/components/Index/Roadmap';
 import Message from '@/components/Index/Message';
-// import DiscordBottom from '@/components/Index/DiscordBottom';
 
 export default {
   components: {
@@ -57,34 +52,10 @@ export default {
     News,
     About,
     Contents,
-    // Discord,
     Conversions,
     Alliances,
     Roadmap,
     Message,
-    // DiscordBottom,
-  },
-  mounted() {
-    // this.vantaEffect = Net({
-    //   el: this.$refs.vantaRef,
-    //   mouseControls: true,
-    //   touchControls: true,
-    //   gyroControls: false,
-    //   minHeight: 200.00,
-    //   minWidth: 200.00,
-    //   scale: 1.00,
-    //   scaleMobile: 1.00,
-    //   color: 0xff3f91,
-    //   backgroundColor: 0x0b193e,
-    //   points: 10,
-    //   maxDistance: 20,
-    //   spacing: 12,
-    // })
-  },
-  beforeDestroy() {
-    // if (this.vantaEffect) {
-    //   this.vantaEffect.destroy()
-    // }
   },
 }
 </script>

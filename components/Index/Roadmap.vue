@@ -62,7 +62,7 @@ export default {
     items: [
       { text: '- JDA Team Established<br />- Community Launch (Discord)', image: roadmapV1 },
       { text: '- WhitePaper Release<br />- Official Media Launch (Twitter, Medium, Website)<br />- Community Event', image: roadmapV2 },
-      { text: '- GEN0 NFT Release on Dfinity and Polygon<br />- NFT Airdrop<br />- Strengthening Collaboration (DAOs, Community, NFT Project)<br />Community Event<br />- Official Launch of Cyber JDA School', image: roadmapV3 },
+      { text: '- GEN0 NFT Release on Dfinity and Polygon<br />- NFT Airdrop<br />- Strengthening Collaboration (DAOs, Community, NFT Project)<br />- Community Event<br />- Official Launch of Cyber JDA School', image: roadmapV3 },
       { text: '- Official Launch of Cyber JDA School Platform on Dfinity and Polygon<br />- Official Launch of Cyber JDA Job Matching Platform on Dfinity and Polygon<br />- NFT Airdrop', image: roadmapV4 },
       // { text: 'Official Launch of Cyber JDA School Platform on Dfinity and Polygon<br />Official Launch of Cyber JDA Job Matching Platform on Dfinity and Polygon<br />NFT Airdrop', image: roadmapV5 },
     ]

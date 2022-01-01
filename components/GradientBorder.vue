@@ -29,13 +29,13 @@ export default {
 .radius-8 {
   border-radius: 8px;
   & * {
-    border-radius: 8px;
+    border-radius: 8px !important;
   }
 }
 .radius-24 {
   border-radius: 24px;
   & * {
-    border-radius: 24px;
+    border-radius: 24px !important;
   }
 }
 </style>

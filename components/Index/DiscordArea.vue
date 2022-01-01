@@ -6,7 +6,7 @@
       <v-col
         class="discord-area-col px-8"
       >
-        <H3 class="discord-area-h3">Japan DAO Association Discord Community</H3>
+        <Typography font="discordarea-h3">Japan DAO Association Discord Community</Typography>
         <div class="mb-4 text-center">
           <DiscordButton />
         </div>
@@ -16,12 +16,12 @@
 </template>
 
 <script>
-import H3 from '@/components/Font/H3';
+import Typography from '@/components/Typography';
 import DiscordButton from '@/components/DiscordButton';
 
 export default {
   components: {
-    H3,
+    Typography,
     DiscordButton,
   }
 }
@@ -52,14 +52,6 @@ export default {
       background: #0B193E;
       box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.16);
       border-radius: 8px;
-      .discord-area-h3 {
-        text-align: center;
-        font-size: 30px !important;
-        margin-bottom: 30px !important;
-        @media (max-width: 580px) {
-          font-size: 20px !important;
-        }
-      }
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <Aos>
-    <H3>News</H3>
+    <Typography font="h3">News</Typography>
     <div class="mx-4 mt-8">
       <v-row
         class="article-link-row"
@@ -26,8 +26,8 @@
                   class="article-img"
                 >
                 </v-img>
-                <NormalText>{{ article.title }}</NormalText>
-                <NormalText class="article-pubdate">{{ article.pubDate }}</NormalText>
+                <Typography>{{ article.title }}</Typography>
+                <Typography font="news-pubdate">{{ article.pubDate }}</Typography>
               </a>
             </v-col>
           </v-row>
@@ -40,14 +40,12 @@
 <script>
 import dayjs from 'dayjs';
 import Aos from '@/components/Aos';
-import H3 from '@/components/Font/H3';
-import NormalText from '@/components/Font/NormalText';
+import Typography from '@/components/Typography';
 
 export default {
   components: {
     Aos,
-    H3,
-    NormalText,
+    Typography,
   },
   data: () => ({
     articles: [],
@@ -96,10 +94,6 @@ export default {
       @media (max-width: 950px) {
         margin: 0 auto;
       }
-    }
-    .article-pubdate {
-      font-size: 14px;
-      color: #636B78;
     }
   }
 }

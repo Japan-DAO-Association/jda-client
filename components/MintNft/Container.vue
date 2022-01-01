@@ -1,11 +1,11 @@
 <template>
   <Aos>
-    <H3 class="text-center">Mint NFT on Polygon</H3>
-    <NormalText
+    <Typography font="h3" class="text-center">Mint NFT on Polygon</Typography>
+    <Typography
       class="desc text-center"
     >
       blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-    </NormalText>
+    </Typography>
     <div class="mt-8">
       <v-row
         class="card-row"
@@ -22,15 +22,13 @@
 
 <script>
 import Aos from '@/components/Aos';
-import H3 from '@/components/Font/H3';
-import NormalText from '@/components/Font/NormalText';
+import Typography from '@/components/Typography';
 import MintNftCard from '@/components/MintNft/Card';
 
 export default {
   components: {
     Aos,
-    H3,
-    NormalText,
+    Typography,
     MintNftCard,
   },
 }

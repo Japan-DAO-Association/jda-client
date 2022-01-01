@@ -1,6 +1,6 @@
 <template>
   <Aos>
-    <H3 class="text-center">About</H3>
+    <Typography font="h3" class="text-center">About</Typography>
     <div class="mx-4 mt-8">
       <v-row>
         <v-col
@@ -17,7 +17,7 @@
           cols="12" xs="11" sm="10" md="6" lg="6"
           class="text-wrapper"
         >
-          <NormalText class="text">{{ $t('index.about.desc.1') }}</NormalText>
+          <Typography class="text">{{ $t('index.about.desc.1') }}</Typography>
         </v-col>
       </v-row>
       <v-row>
@@ -25,7 +25,7 @@
           cols="12" xs="11" sm="10" md="6" lg="6"
           class="text-wrapper"
         >
-          <NormalText class="text">{{ $t('index.about.desc.2') }}</NormalText>
+          <Typography class="text">{{ $t('index.about.desc.2') }}</Typography>
         </v-col>
         <v-col
           cols="12" xs="11" sm="10" md="6" lg="6"
@@ -39,7 +39,7 @@
         </v-col>
       </v-row>
       <v-row>
-          <NormalText class="about-text-bottom my-12">{{ $t('index.about.desc.3') }}</NormalText>
+          <Typography class="about-text-bottom my-12">{{ $t('index.about.desc.3') }}</Typography>
       </v-row>
     </div>
   </Aos>
@@ -47,14 +47,12 @@
 
 <script>
 import Aos from '@/components/Aos';
-import H3 from '@/components/Font/H3';
-import NormalText from '@/components/Font/NormalText';
+import Typography from '@/components/Typography';
 
 export default {
   components: {
     Aos,
-    H3,
-    NormalText,
+    Typography,
   }
 }
 </script>

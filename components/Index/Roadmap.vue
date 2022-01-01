@@ -4,7 +4,7 @@
       class="roadmap-wrapper"
     >
       <v-col>
-        <H3 class="text-center">Roadmap</H3>
+        <Typography font="h3" class="text-center">Roadmap</Typography>
         <div class="mx-4 mt-0">
           <v-row class="roadmap-row">
             <v-col
@@ -28,9 +28,8 @@
                   </v-col>
                   <v-col
                     cols="7" xs="7" sm="7" md="7" lg="7"
-                    class="roadmap-h4-wrapper"
                   >
-                    <H4 class="roadmap-h4" v-html="item.text" />
+                    <Typography font="roadmap-h4" :innertexts="item.text" />
                   </v-col>
                 </v-row>
               </Aos>
@@ -44,8 +43,7 @@
 
 <script>
 import Aos from '@/components/Aos';
-import H3 from '@/components/Font/H3';
-import H4 from '@/components/Font/H4';
+import Typography from '@/components/Typography';
 import roadmapV1 from '@/assets/images/roadmap-v1.svg';
 import roadmapV2 from '@/assets/images/roadmap-v2.svg';
 import roadmapV3 from '@/assets/images/roadmap-v3.svg';
@@ -55,8 +53,7 @@ import roadmapV4 from '@/assets/images/roadmap-v4.svg';
 export default {
   components: {
     Aos,
-    H3,
-    H4,
+    Typography,
   },
   data: () => ({
     items: [
@@ -106,24 +103,6 @@ export default {
             }
             @media (max-width: 580px) {
               width: 90px;
-            }
-          }
-        }
-        .roadmap-h4-wrapper {
-          display: table;
-          .roadmap-h4 {
-            display: table-cell;
-            vertical-align: middle;
-            @media (max-width: 1100px) {
-              font-size: 20px !important;
-            }
-            @media (max-width: 899.9px) {
-              font-size: 16px !important;
-              line-height: 24px;
-            }
-            @media (max-width: 580px) {
-              font-size: 14px !important;
-              line-height: 22px;
             }
           }
         }

@@ -17,59 +17,19 @@
               >
               <v-row class="sns-wrapper">
                 <v-col
+                  v-for="item in snsItems"
+                  :key="item.type"
                   cols="3"
                 >
                   <a
-                    href="https://twitter.com/DaoAssociation"
+                    :href="item.url"
                     target="_blank"
                     rel="noopener"
                   >
                     <img
-                      src="@/assets/images/twitter-logo.svg"
-                      alt="twitter logo"
-                    >
-                  </a>
-                </v-col>
-                <v-col
-                  cols="3"
-                >
-                  <a
-                    href="https://discord.com/invite/qacgSuSNYf"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img
-                      src="@/assets/images/discord-footer-logo.svg"
-                      alt="discord logo"
-                    >
-                  </a>
-                </v-col>
-                <v-col
-                  cols="3"
-                >
-                  <a
-                    :href="mediumLink"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img
-                      src="@/assets/images/medium-logo.svg"
-                      alt="medium logo"
-                    >
-                  </a>
-                </v-col>
-                <v-col
-                  cols="3"
-                >
-                  <a
-                    href="https://github.com/Japan-DAO-Association"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img
-                      src="@/assets/images/github-logo.svg"
-                      alt="github logo"
-                    >
+                      :src="item.imgSrc"
+                      :alt="item.imgAlt"
+                    />
                   </a>
                 </v-col>
               </v-row>
@@ -107,13 +67,42 @@
 
 <script>
 import Typography from '@/components/Typography';
+import TwitterLogo from '@/assets/images/twitter-logo.svg';
+import DiscordLogo from '@/assets/images/discord-footer-logo.svg';
+import MediumLogo from '@/assets/images/medium-logo.svg';
+import GithubLogo from '@/assets/images/github-logo.svg';
 
 export default {
   components: {
     Typography,
   },
   data: () => ({
-    mediumLink: process.env.MEDIUM_ACCOUNT_PAGE,
+    snsItems: [
+      {
+        type: 'twitter',
+        url: 'https://twitter.com/DaoAssociation',
+        imgSrc: TwitterLogo,
+        imgAlt: 'twitter logo',
+      },
+      {
+        type: 'discord',
+        url: 'https://discord.com/invite/qacgSuSNYf',
+        imgSrc: DiscordLogo,
+        imgAlt: 'discord logo',
+      },
+      {
+        type: 'medium',
+        url: process.env.MEDIUM_ACCOUNT_PAGE,
+        imgSrc: MediumLogo,
+        imgAlt: 'medium logo',
+      },
+      {
+        type: 'github',
+        url: 'https://github.com/Japan-DAO-Association',
+        imgSrc: GithubLogo,
+        imgAlt: 'github logo',
+      }
+    ]
   })
 }
 </script>

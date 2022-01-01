@@ -2,7 +2,7 @@
   <Aos>
     <v-row>
       <v-col>
-        <H3>Affiliated DAO Communities</H3>
+        <Typography font="h3">Affiliated DAO Communities</Typography>
         <div class="mx-4 mt-8">
           <v-row
             class="alliance-row"
@@ -33,13 +33,13 @@
 
 <script>
 import Aos from '@/components/Aos';
-import H3 from '@/components/Font/H3';
+import Typography from '@/components/Typography';
 import GradientBorder from '@/components/GradientBorder';
 
 export default {
   components: {
     Aos,
-    H3,
+    Typography,
     GradientBorder,
   },
   data: () => ({

@@ -22,5 +22,6 @@ module.exports = {
     'vue/first-attribute-linebreak': 'off',
     'vue/no-reserved-props': 'off',
     'vue/no-lone-template': 'off',
+    'vue/require-prop-types': 'off',
   }
 }

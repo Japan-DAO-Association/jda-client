@@ -2,7 +2,10 @@
   <v-row class="hero">
     <v-col cols="12" class="">
       <div class="hero-text-wrap">
-        <h2 class="hero-text hero-text-h2">
+        <Typography
+          font="hero-h2"
+          class="hero-text"
+        >
           <vue-typer
             :text="words"
             pre-type-delay='700'
@@ -13,8 +16,8 @@
             caret-animation='smooth'
           ></vue-typer>
           with DAO
-        </h2>
-        <H3 class="hero-text hero-text-h3">Realizing the Next Generation of Work with DAO<br />To live our own life</H3>
+        </Typography>
+        <Typography font="hero-h3" class="hero-text hero-text-h3">Realizing the Next Generation of Work with DAO<br />To live our own life</Typography>
       </div>
       <DiscordArea class="hero-discord-area" />
     </v-col>
@@ -22,12 +25,12 @@
 </template>
 
 <script>
-import H3 from '@/components/Font/H3';
+import Typography from '@/components/Typography';
 import DiscordArea from '@/components/Index/DiscordArea';
 
 export default {
   components: {
-    H3,
+    Typography,
     DiscordArea,
   },
   data () {
@@ -66,37 +69,6 @@ export default {
     @media (max-width: 580px) {
       width: 90%;
       max-width: 90%;
-    }
-    .hero-text {
-      font-family: Sanchez !important;
-      font-style: normal;
-      font-weight: 400 !important;
-      color: #fff;
-      text-shadow: 0px 0px 32px rgba(10, 41, 66, 0.8);
-      text-align: center;
-      .textra {
-        display: inline-block;
-      }
-      @media (max-width: 580px) {
-        right: 0;
-        padding: 8px 24px;
-      }
-    }
-    .hero-text-h2 {
-      font-size: 72px;
-      line-height: 100px;
-      @media (max-width: 580px) {
-        font-size: 50px;
-        line-height: 34px;
-      }
-      @media (max-width: 440px) {
-        font-size: 32px;
-      }
-    }
-    .hero-text-h3 {
-      @media(max-width: 580px) {
-        font-size: 26px !important;
-      }
     }
   }
   .hero-discord-area {

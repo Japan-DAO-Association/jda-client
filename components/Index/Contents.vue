@@ -1,6 +1,6 @@
 <template>
   <Aos>
-    <H3>Contents</H3>
+    <Typography font="h3">Contents</Typography>
     <div class="mx-4 mt-8">
       <v-row
         justify="center"
@@ -102,12 +102,12 @@
 
 <script>
 import Aos from '@/components/Aos';
-import H3 from '@/components/Font/H3';
+import Typography from '@/components/Typography';
 
 export default {
   components: {
     Aos,
-    H3,
+    Typography,
   }
 }
 </script>

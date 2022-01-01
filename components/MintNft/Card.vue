@@ -11,16 +11,16 @@
         indeterminate
       ></v-progress-linear>
     </template>
-    <H4 class="nft-title">NFT title</H4>
+    <Typography font="nftcard-h4">NFT title</Typography>
     <v-img
       height="250"
       src="ogp.png"
     ></v-img>
-    <NormalText
-      class="nft-desc"
+    <Typography
+      font="normal-black"
     >
       blah blah blah blah blah blah blah blah
-    </NormalText>
+    </Typography>
     <v-card-actions>
       <MintButton
         @reserve="reserve"
@@ -30,13 +30,11 @@
 </template>
 
 <script>
-import H4 from '@/components/Font/H4';
-import NormalText from '@/components/Font/NormalText';
+import Typography from '@/components/Typography';
 
 export default {
   components: {
-    H4,
-    NormalText,
+    Typography,
   },
   data: () => ({
     loading: false,
@@ -53,13 +51,6 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-  .nft-title {
-    color: #000;
-    margin: 16px !important;
-  }
-  .nft-desc {
-    color: #000;
-  }
   .mint-btn {
     background: linear-gradient(90deg, #467DE7 0%, #DA46E7 100%);
     border-radius: 8px;

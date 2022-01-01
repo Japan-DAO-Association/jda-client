@@ -11,19 +11,19 @@
           cols="12" xs="11" sm="10" md="6" lg="5"
           class="conversion-col"
         >
-          <H3 class="conversion-title">{{ $t('index.conversions.card.1.title') }}</H3>
+          <Typography font="conversion-h3" class="conversion-title">{{ $t('index.conversions.card.1.title') }}</Typography>
           <div>
-            <NormalText>{{ $t('index.conversions.card.1.desc.1') }}<br />
-            {{ $t('index.conversions.card.1.desc.2') }}</NormalText>
+            <Typography font="conversion-normal">{{ $t('index.conversions.card.1.desc.1') }}<br />
+            {{ $t('index.conversions.card.1.desc.2') }}</Typography>
           </div>
         </v-col>
         <v-col
           cols="12" xs="11" sm="10" md="6" lg="5"
           class="conversion-col"
         >
-          <H3 class="conversion-title">{{ $t('index.conversions.card.2.title') }}</H3>
+          <Typography font="conversion-h3" class="conversion-title">{{ $t('index.conversions.card.2.title') }}</Typography>
           <div>
-            <NormalText>{{ $t('index.conversions.card.2.desc') }}</NormalText>
+            <Typography font="conversion-normal">{{ $t('index.conversions.card.2.desc') }}</Typography>
           </div>
         </v-col>
       </v-row>
@@ -33,14 +33,12 @@
 
 <script>
 import Aos from '@/components/Aos';
-import H3 from '@/components/Font/H3';
-import NormalText from '@/components/Font/NormalText';
+import Typography from '@/components/Typography';
 
 export default {
   components: {
     Aos,
-    H3,
-    NormalText,
+    Typography,
   }
 }
 </script>
@@ -60,20 +58,6 @@ export default {
   }
   .conversion-row {
     .conversion-col {
-      @media (max-width: 500px) {
-        h3 {
-          margin: 0 2%;
-          font-size: 22px !important;
-        }
-        p {
-          margin: 0 4%;
-          font-size: 16px;
-          line-height: 26px;
-        }
-      }
-      .conversion-title, p {
-        color: #0b193e;
-      }
       .conversion-title {
         @media (max-width: 959.9px) {
           margin-bottom: 20px !important;

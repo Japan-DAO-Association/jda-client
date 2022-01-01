@@ -88,14 +88,14 @@
                 target="_blank"
                 rel="noopener"
               > -->
-                <NormalText class="footer-font">{{ $t('footer.whitepaper.en') }}</NormalText>
+                <Typography class="footer-font">{{ $t('footer.whitepaper.en') }}</Typography>
               <!-- </a> -->
               <!-- <a
                 href="whitepaper-ja.pdf"
                 target="_blank"
                 rel="noopener"
               >
-                <NormalText class="footer-font">{{ $t('footer.whitepaper.ja') }}</NormalText>
+                <Typography class="footer-font">{{ $t('footer.whitepaper.ja') }}</Typography>
               </a> -->
             </v-col>
           </v-row>
@@ -106,11 +106,11 @@
 </template>
 
 <script>
-import NormalText from '@/components/Font/NormalText';
+import Typography from '@/components/Typography';
 
 export default {
   components: {
-    NormalText,
+    Typography,
   },
   data: () => ({
     mediumLink: process.env.MEDIUM_ACCOUNT_PAGE,

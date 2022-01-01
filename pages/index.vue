@@ -81,9 +81,6 @@ export default {
   .about-layout {
     background: linear-gradient(128.39deg, #4782DA -0.3%, #713BE4 38.36%, #CF4848 100%);
   }
-  .discord-layout {
-    background: #fff;
-  }
   .roadmap-layout {
     background: linear-gradient(180deg, #467DE7 -0.03%, #DA46E7 100%);
     margin-bottom: 0 !important;
@@ -115,22 +112,6 @@ export default {
       @media (max-width: 500px) {
         height: 772px;
       }
-    }
-  }
-  .discord-bottom-layout {
-    margin-bottom: 0 !important;
-    background-image: url("@/assets/images/discord-bg.svg");
-    background-position: center;
-    background-size: 18% auto;
-    background-repeat: no-repeat;
-    @media (max-width: 1300px) {
-      background-size: 24% auto;
-    }
-    @media (max-width: 960px) {
-      background-size: 36% auto;
-    }
-    @media (max-width: 700px) {
-      background-size: 50% auto;
     }
   }
 }

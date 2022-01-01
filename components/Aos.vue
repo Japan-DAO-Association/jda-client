@@ -8,6 +8,6 @@
     data-aos-mirror="false"
     data-aos-once="false"
   >
-    <slot></slot>
+    <slot />
   </div>
 </template>

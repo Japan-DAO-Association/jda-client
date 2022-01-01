@@ -2,7 +2,7 @@
   <v-row
     class="discord-area"
   >
-    <GradientBorder class="discord-border text-center mx-auto">
+    <GradientBorder radius="8" class="discord-border text-center mx-auto">
       <v-col
         class="discord-area-col px-8"
       >
@@ -46,13 +46,9 @@ export default {
   @media (max-width: 580px) {
     // display: none;
   }
-  .discord-border {
-    border-radius: 8px;
-    .discord-area-col {
-      background: #0B193E;
-      box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.16);
-      border-radius: 8px;
-    }
+  .discord-area-col {
+    background: #0B193E;
+    box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.16);
   }
 }
 </style>

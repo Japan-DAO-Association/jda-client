@@ -17,7 +17,9 @@
                 target="_blank"
                 rel="noopener"
               >
-                <GradientBorder class="card-border">
+                <GradientBorder
+                  radius="24"
+                >
                   <v-card class="card">
                     <v-card-title class="card-title">{{ item.name }}</v-card-title>
                   </v-card>
@@ -78,19 +80,15 @@ export default {
 
 <style lang="scss" scoped>
 .alliance-row {
-  .card-border {
-    border-radius: 24px;
-    .card {
-      background: #0A2942;
-      border-radius: 24px;
-      text-align: center;
-      .card-title {
-        display: inline-block;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 30px;
-        color: #fff;
-      }
+  .card {
+    background: #0A2942;
+    text-align: center;
+    .card-title {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 30px;
+      color: #fff;
     }
   }
 }

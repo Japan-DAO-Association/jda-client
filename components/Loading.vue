@@ -1,7 +1,7 @@
 <template>
   <div v-if="loading" class="splash-screen">
     <div class="spinner-wrapper">
-      <div class="spinner"></div>
+      <div class="spinner" />
     </div>
   </div>
 </template>

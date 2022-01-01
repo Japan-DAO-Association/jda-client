@@ -4,7 +4,7 @@
       cols="12" xs="12" sm="12" md="12" lg="9"
       class="mx-auto"
     >
-      <slot></slot>
+      <slot />
     </v-col>
   </v-row>
 </template>

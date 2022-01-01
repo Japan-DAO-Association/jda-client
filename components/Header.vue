@@ -9,13 +9,19 @@
       class="top-link ml-md-2 ml-lg-16"
     >
       <img
+        src="@/assets/images/jda-logo2.svg"
+        alt="jda logo"
+        class="jda-logo-pc"
+      >
+      <img
         src="@/assets/images/jda-logo.svg"
         alt="jda logo"
+        class="jda-logo-sp"
       >
-      <v-toolbar-title 
+      <!-- <v-toolbar-title 
         class="title"
         v-text="title"
-      />
+      /> -->
     </nuxt-link>
     <v-spacer />
     <div class="pc-nav-right">
@@ -122,12 +128,24 @@ export default {
   .top-link {
     color: #fff;
     display: flex;
-    .title {
-      line-height: 3.5;
+    .jda-logo-pc {
+      width: 288px;
       @media (max-width: 580px) {
         display: none;
       }
     }
+    .jda-logo-sp {
+      display: none;
+      @media (max-width: 580px) {
+        display: block;
+      }
+    }
+    // .title {
+    //   line-height: 3.5;
+    //   @media (max-width: 580px) {
+    //     display: none;
+    //   }
+    // }
   }
   .pc-nav-right {
     .mint-btn {

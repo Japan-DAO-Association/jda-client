@@ -21,7 +21,7 @@
     "@walletconnect/web3-provider": "^1.7.0",
     "aos": "^3.0.0-beta.6",
     "authereum": "^0.1.14",
-    "core-js": "^3.19.2",
+    "core-js": "^3.20.1",
     "dayjs": "^1.10.7",
     "eth-provider": "^0.9.8",
     "ethers": "^5.5.2",

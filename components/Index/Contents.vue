@@ -145,7 +145,7 @@ export default {
         height: 370px;
       }
       .card-title {
-        font-family: "Noto Sans CJK JP";
+        font-family: Raleway;
         font-weight: bold;
         font-size: 24px;
         line-height: 36px;

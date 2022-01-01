@@ -122,9 +122,9 @@ export default {
   color: #000;
 }
 .hero-text {
-  font-family: Sanchez !important;
+  font-family: Raleway !important;
   font-style: normal;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   color: #fff;
   text-shadow: 0px 0px 32px rgba(10, 41, 66, 0.8);
   text-align: center;
@@ -145,6 +145,7 @@ export default {
   }
 }
 .h3-style {
+  font-family: Raleway !important;
   margin-bottom: 80px !important;
   @media (max-width: 580px) {
     margin-bottom: 40px !important;
@@ -156,6 +157,7 @@ export default {
   }
 }
 .discordarea-h3-style {
+  font-family: Raleway !important;
   text-align: center;
   font-size: 30px !important;
   margin-bottom: 30px !important;

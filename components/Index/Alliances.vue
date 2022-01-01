@@ -2,7 +2,7 @@
   <Aos>
     <v-row>
       <v-col>
-        <Typography font="h3">Affiliated DAO Communities</Typography>
+        <Typography font="h3">DAO Community Partnerships</Typography>
         <div class="mx-4 mt-8">
           <v-row
             class="alliance-row"

@@ -136,6 +136,9 @@ export default {
         max-width: 200px;
         margin: 2px auto;
       }
+      img {
+        width: 32px;
+      }
     }
     .copyright {
       color: #fff;

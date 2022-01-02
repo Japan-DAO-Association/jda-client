@@ -136,6 +136,19 @@ export default {// 404 routing
       }
     ]
   ],
+
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        name: 'English'
+      },
+      {
+        code: 'ja',
+        name: '日本語'
+      },
+    ]
+  },
   
   env: {
     // BASE_HOST: process.env.BASE_HOST,

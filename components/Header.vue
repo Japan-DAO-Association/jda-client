@@ -25,6 +25,15 @@
     </nuxt-link>
     <v-spacer />
     <div class="pc-nav-right">
+      <!-- <a
+        v-for="locale in availableLocales"
+        :key="locale.code"
+        href="#"
+        class="btn"
+        @click.prevent.stop="$i18n.setLocale(locale.code)"
+      >
+        {{ locale.name }}
+      </a> -->
       <!-- <a 
         href="#"
         target="_blank"
@@ -112,8 +121,15 @@ export default {
         { text: 'Connect to Dfinity' },
         { text: 'Connect to Polygon' },
       ],
+      currentLang: '',
+      updateLang: '',
     }
   },
+  computed: {
+    availableLocales () {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale);
+    }
+  }
 }
 </script>
 
@@ -148,6 +164,17 @@ export default {
     // }
   }
   .pc-nav-right {
+    .btn {
+      color: #fff;
+      font-weight: 500;
+      &:hover {
+        opacity: 0.8;
+        transition: 0.7s;
+      }
+      @media (max-width: 580px) {
+        display: none;
+      }
+    }
     .mint-btn {
       background: transparent;
       color: #fff;

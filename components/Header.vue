@@ -121,8 +121,6 @@ export default {
         { text: 'Connect to Dfinity' },
         { text: 'Connect to Polygon' },
       ],
-      currentLang: '',
-      updateLang: '',
     }
   },
   computed: {

@@ -44,7 +44,7 @@ export default {
     items: [],
     isGradientActive: true,
   }),
-  created() {
+  mounted() {
     this.setItems();
   },
   methods: {
@@ -59,7 +59,8 @@ export default {
         {
           imgSrc: PeopleImg,
           title: this.$t('index.contents.card.2.title'),
-          titleStyle: 'card-title',
+          // titleStyle: 'card-title',
+          titleStyle: '',
           desc: this.$t('index.contents.card.2.desc')
         },
         {

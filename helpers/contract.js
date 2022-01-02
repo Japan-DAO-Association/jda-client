@@ -21,6 +21,6 @@ export async function callContract(provider, abi, call, options) {
 }
 
 export default {
-  getERC20,
+  getContract,
   callContract,
 }

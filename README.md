@@ -21,7 +21,7 @@ For detailed explanation on how things work, check out the [documentation](https
 
 ## For Contributors
 
-See [this contribution guideline](https://github.com/Japan-DAO-Association/jda-client/blob/main/.github/CONTRIBUTING.md)
+See [this contribution guideline](https://github.com/Japan-DAO-Association/jda-client/blob/main/.github/CONTRIBUTING.md).
 
 ## Special Directories
 

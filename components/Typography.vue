@@ -70,6 +70,15 @@
     </h4>
   </div>
   <div
+    v-else-if="font === 'contents-h4'"
+  >
+    <h4
+      class="my-4 text-h5 font-weight-bold contents-h4-style"
+    >
+      <slot />
+    </h4>
+  </div>
+  <div
     v-else-if="font === 'h4'"
   >
     <h4
@@ -89,6 +98,13 @@
    v-else-if="font === 'news-pubdate'"
   >
     <p class="font-weight-bold normal-text-style news-pubdate">
+      <slot />
+    </p>
+  </div>
+  <div
+   v-else-if="font === 'contents-normal'"
+  >
+    <p class="font-weight-bold normal-text-style contents-normal">
       <slot />
     </p>
   </div>
@@ -220,9 +236,37 @@ export default {
   color: #000;
   margin: 16px !important;
 }
+.contents-h4-style {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  // color: #0A2942;
+  color: #fff;
+  @media (max-width: 960px) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  @media (max-width: 580px) {
+    padding: 10px;
+  }
+}
 .news-pubdate {
   font-size: 14px;
-  color: #636B78;
+  // color: #636B78;
+  color: rgba(255, 255, 255, 0.5);
+}
+.contents-normal {
+  font-family: "Noto Sans CJK JP" !important;
+  font-weight: normal !important;
+  font-size: 18px !important;
+  line-height: 26px !important;
+  // color: #636B78 !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  @media (max-width: 959.9px) {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
 }
 .normal-text-style {
   font-size: 18px;

@@ -4,34 +4,22 @@
       "desc": {
         "1": "Japan DAO Association, JDA, is a DAO-based job matching platform that directly connects DAOs with DAOs, providing engineers, creators, marketers, and investors with many encounters and quick business opportunities that transcend job boundaries and positions.",
         "2": "Our proposal to the talent shortage in the blockchain industry is to utilize decentralized organizations on the Polygon and Dfinity blockchains that provide workers, especially creators and engineers, with the skills and practice to be active in DAOs. It also provides an opportunity to develop good community managers and influencers, which is in short supply in the industry.",
-        "3": "JDA will become a place where many individuals and organizations can meet through JDA or use it as a hub to create and collaborate on business at a speed that conventional organizations cannot."
+        "3": "JDA will become a place where many individuals and organizations can meet through JDA or use it as a hub to create and collaborate on business at a speed that traditional organizations cannot."
       }
     },
     "contents": {
       "card": {
         "1": {
           "title": "DAOs to DAOs Community",
-          "desc": "We will create stronger services and experiences that have never been seen before, such as cross-industry collaborations."
+          "desc": "Learn with like-minded peers, build track records of developing and managing projects, and achieve financial freedom. JDA will create stronger services and experiences that have never been seen before, such as cross-industry collaborations."
         },
         "2": {
-          "title": "P2P Job Matching",
-          "desc": "The job matching business provides a place where recruiters can directly match with engineers and creators."
+          "title": "DAO Talent Development",
+          "desc": "JDA develop talents to live in DAOs. By sharing our extraordinary knowledge, JDA will provide participants with valuable skills and connections in the Web 3.0 era, and contribute to the development of blockchain projects and companies that are lacking developers."
         },
         "3": {
-          "title": "Training and Support of Talents",
-          "desc": {
-            "1": "Blockchain Engineer",
-            "2": "Influencer/KOL",
-            "3": "Community Manager"
-          }
-        },
-        "4": {
-          "title": "Marketing Support",
-          "desc": "We will provide affiliated DAOs and individuals with marketing support utilizing our growing community."
-        },
-        "5": {
-          "title": "Web3.0 Project Incubator",
-          "desc": "By sharing our extraordinary knowledge, we will support worthwhile projects in the Web3.0 era."
+          "title": "Learning & Job Matching Platform",
+          "desc": "Job Matching provides a place where creators and software engineers can be directly matched with blockchain projects and companies. JDA will provide marketing support to our partner DAOs and other organizations by leveraging our sustained and expanding communities."
         }
       }
     },

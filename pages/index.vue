@@ -11,7 +11,7 @@
         <Layout class="layout about-layout"><About /></Layout>
         <Layout>
           <Contents />
-          <Conversions />
+          <!-- <Conversions /> -->
         </Layout>
         <Layout><Alliances /></Layout>
         <Layout class="layout roadmap-layout">
@@ -40,7 +40,7 @@ import HeroArea from '@/components/Index/HeroArea';
 import News from '@/components/Index/News';
 import About from '@/components/Index/About';
 import Contents from '@/components/Index/Contents';
-import Conversions from '@/components/Index/Conversions';
+// import Conversions from '@/components/Index/Conversions';
 import Alliances from '@/components/Index/Alliances';
 import Roadmap from '@/components/Index/Roadmap';
 import Message from '@/components/Index/Message';
@@ -52,7 +52,7 @@ export default {
     News,
     About,
     Contents,
-    Conversions,
+    // Conversions,
     Alliances,
     Roadmap,
     Message,

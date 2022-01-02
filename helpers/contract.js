@@ -1,23 +1,13 @@
 import { ethers } from 'ethers';
 
-const ERC20ABI = [
-  "function balanceOf(address owner) view returns (uint256)",
-  "function decimals() view returns (uint8)",
-  "function symbol() view returns (stirng)",
-  "function allowance(address to, uint amount) returns (boolean)",
-  "function transfer(address to, uint amount) returns (boolean)",
-  "function approve(address spender, uint256 amount) returns (boolean)",
-  "event Transfer(address indexed from, address indexed to, uint amount)"
-];
-
-export function getERC20(address, signer) {
-  const ERC20Contract = new ethers.Contract(
+export function getContract(address, abi, signer) {
+  const contract = new ethers.Contract(
     ethers.utils.getAddress(address),
-    ERC20ABI,
+    abi,
     signer
   );
   
-  return ERC20Contract;
+  return contract;
 }
 
 export async function callContract(provider, abi, call, options) {

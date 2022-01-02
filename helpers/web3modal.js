@@ -3,8 +3,9 @@ import Web3Modal from 'web3modal';
 import providerOptions from './providerOptions';
 
 const _getWeb3Modal = () => {
+  const network = process.env.NODE_ENV === 'development' ? 'mumbai' : 'polygon';
   const web3Modal = new Web3Modal({
-    network: "mainnet",
+    network,
     cacheProvider: true,
     providerOptions,
   })

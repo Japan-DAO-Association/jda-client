@@ -18,10 +18,6 @@
         alt="jda logo"
         class="jda-logo-sp"
       >
-      <!-- <v-toolbar-title 
-        class="title"
-        v-text="title"
-      /> -->
     </nuxt-link>
     <v-spacer />
     <div class="pc-nav-right">
@@ -46,7 +42,7 @@
           {{ linkTexts[0].text }}
         </v-btn>
       </a> -->
-      <!-- <nuxt-link 
+      <nuxt-link 
         to="/mint-nft"
       >
         <v-btn
@@ -55,12 +51,12 @@
         >
           {{ linkTexts[1].text }}
         </v-btn>
-      </nuxt-link> -->
+      </nuxt-link>
     </div>
-    <!-- <v-app-bar-nav-icon
+    <v-app-bar-nav-icon
       class="burger"
       @click.stop="drawer = !drawer"
-    ></v-app-bar-nav-icon> -->
+    ></v-app-bar-nav-icon>
     <v-navigation-drawer
       v-model="drawer"
       absolute
@@ -114,7 +110,6 @@
 export default {
   data () {
     return {
-      title: 'Japan DAO Association',
       drawer: false,
       group: null,
       linkTexts: [
@@ -138,7 +133,6 @@ export default {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.12));
   color: #fff;
   font-weight: 500;
-  // overflow: hidden;
   .top-link {
     color: #fff;
     display: flex;
@@ -154,12 +148,6 @@ export default {
         display: block;
       }
     }
-    // .title {
-    //   line-height: 3.5;
-    //   @media (max-width: 580px) {
-    //     display: none;
-    //   }
-    // }
   }
   .pc-nav-right {
     .btn {

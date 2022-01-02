@@ -214,6 +214,7 @@ export default {
   color: #0b193e;
 }
 .roadmap-h4-wrapper {
+  height: 100%;
   display: table;
   .roadmap-h4-style {
     display: table-cell;

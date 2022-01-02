@@ -55,7 +55,7 @@ export default {
   background-position: center;
   position: relative;
   @media (max-width: 580px) {
-    // background-image: url('@/assets/images/hero_bg_sp.svg');
+    background-image: url('@/assets/images/hero_bg_sp.svg');
   }
   @media (max-width: 440px) {
     height: 95vh;

@@ -19,6 +19,10 @@ $ yarn generate
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
+## For Contributors
+
+See [this contribution guideline](https://github.com/Japan-DAO-Association/jda-client/blob/main/.github/CONTRIBUTING.md)
+
 ## Special Directories
 
 You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.

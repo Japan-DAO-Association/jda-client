@@ -55,7 +55,6 @@ export default {
   methods: {
     setLang () {
       this.lang = this.$i18n.locale;
-      console.log(this.$t('index.contents.card.3.title'));
     },
     setItems () {
       this.items = [

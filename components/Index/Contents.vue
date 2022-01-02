@@ -2,30 +2,33 @@
   <Aos>
     <Typography font="h3">Contents</Typography>
     <div class="mx-4 mt-8">
-      <v-row
-        justify="space-around"
-        class="service-row"
-      >
-        <v-col
-          v-for="item in items"
-          :key="item.imgSrc"
-          cols="12" xs="11" sm="5" md="5" lg="3"
-          class="service-col text-center"
+      <client-only>
+        <v-row
+          justify="space-around"
+          class="service-row"
         >
-          <img
-            :src="item.imgSrc"
-            alt="content image"
+          <GradientBorder
+            v-for="item in items"
+            :key="item.key"
+            radius="16"
+            :col="isGradientActive"
           >
-          <Typography font="contents-h4" :class="item.titleStyle">{{ item.title }}</Typography>
-          <Typography font="contents-normal">{{ item.desc }}</Typography>
-        </v-col>
-      </v-row>
+            <img
+              :src="item.imgSrc"
+              alt="content image"
+            >
+            <Typography font="contents-h4" :class="item.titleStyle">{{ item.title }}</Typography>
+            <Typography font="contents-normal">{{ item.desc }}</Typography>
+          </GradientBorder>
+        </v-row>
+      </client-only>
     </div>
   </Aos>
 </template>
 
 <script>
 import Aos from '@/components/Aos';
+import GradientBorder from '@/components/GradientBorder';
 import Typography from '@/components/Typography';
 import EarthImg from '@/assets/images/contents-earth.svg';
 import PeopleImg from '@/assets/images/contents-people.svg';
@@ -34,12 +37,14 @@ import PencilImg from '@/assets/images/contents-pencil.svg';
 export default {
   components: {
     Aos,
+    GradientBorder,
     Typography,
   },
   data: () => ({
     items: [],
+    isGradientActive: true,
   }),
-  mounted() {
+  created() {
     this.setItems();
   },
   methods: {
@@ -63,7 +68,7 @@ export default {
           titleStyle: '',
           desc: this.$t('index.contents.card.3.desc')
         },
-      ]
+      ];
     }
   }
 }
@@ -72,10 +77,6 @@ export default {
 <style lang="scss" scoped>
 .service-row {
   .service-col {
-    padding: 16px 30px;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 16px;
     .card-title {
       margin-bottom: 54px;
       @media (max-width: 1870px) {

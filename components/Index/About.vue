@@ -4,7 +4,7 @@
     <div class="mx-4 mt-8">
       <v-row>
         <v-col
-          cols="12" xs="11" sm="10" md="6" lg="6"
+          cols="12" xs="11" sm="11" md="6" lg="6"
           class="image-wrapper"
         >
           <img
@@ -14,7 +14,7 @@
           />
         </v-col>
         <v-col
-          cols="12" xs="11" sm="10" md="6" lg="6"
+          cols="12" xs="11" sm="11" md="6" lg="6"
           class="text-wrapper"
         >
           <Typography class="text">{{ $t('index.about.desc.1') }}</Typography>
@@ -22,13 +22,13 @@
       </v-row>
       <v-row>
         <v-col
-          cols="12" xs="11" sm="10" md="6" lg="6"
+          cols="12" xs="11" sm="11" md="6" lg="6"
           class="text-wrapper"
         >
           <Typography class="text">{{ $t('index.about.desc.2') }}</Typography>
         </v-col>
         <v-col
-          cols="12" xs="11" sm="10" md="6" lg="6"
+          cols="12" xs="11" sm="11" md="6" lg="6"
           class="image-wrapper"
         >
           <img
@@ -80,7 +80,7 @@ export default {
       background-position: 25% 50%;
     }
     @media (max-width: 500px) {
-      background-size: auto 60%;
+      background-size: auto 64%;
     }
   }
   &:nth-of-type(1) {
@@ -90,7 +90,7 @@ export default {
       background-position: 75% 50%;
     }
     @media (max-width: 500px) {
-      background-size: auto 38%;
+      background-size: auto 40%;
     }
   }
   .text {

@@ -1,6 +1,6 @@
 <template>
   <v-row class="hero">
-    <v-col cols="12" class="">
+    <v-col cols="12">
       <div class="hero-text-wrap">
         <Typography
           font="hero-h2"
@@ -54,6 +54,9 @@ export default {
   background-size: auto 100%;
   background-position: center;
   position: relative;
+  @media (max-width: 580px) {
+    // background-image: url('@/assets/images/hero_bg_sp.svg');
+  }
   @media (max-width: 440px) {
     height: 95vh;
   }

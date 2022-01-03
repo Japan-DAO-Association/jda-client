@@ -26,6 +26,11 @@
     >
       Current Price: {{ nftPrice }}
     </Typography>
+    <Typography
+      font="normal-black"
+    >
+      Remaining: {{ remainingNumber }}
+    </Typography>
     <v-card-actions>
       <MintButton
         :provider="provider"
@@ -54,18 +59,20 @@ export default {
     loading: false,
     selection: 1,
     nftPrice: 'please connect your wallet',
+    remainingNumber: 'please connect your wallet',
   }),
   methods: {
     reserve () {
       this.loading = true
       setTimeout(() => (this.loading = false), 2000)
     },
-    getNftPrice() {
+    getTicketInfo() {
       setTimeout(async () => {
         const MintGen0PolygonContract = await contract.getContract(process.env.MintGen0PolygonAddress, MintGen0PolygonAbi, this.signer);
         const res = await MintGen0PolygonContract.GetTicketInfo();
         console.log(res);
         this.nftPrice = res[4] / 1000000;
+        this.remainingNumber = res[5] - res[6];
       }, 10);
     }
   },

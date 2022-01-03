@@ -34,7 +34,7 @@ export default {
         provider,
         signer
       });
-      this.$emit('getNftPrice');
+      this.$emit('getTicketInfo');
     },
   }
 }

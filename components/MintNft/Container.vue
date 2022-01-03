@@ -11,7 +11,7 @@
     <div class="text-center">
       <ConnectWalletButton
         @transferWeb3='getWeb3'
-        @getNftPrice='getNftPrice'
+        @getTicketInfo='getTicketInfo'
       />
     </div>
     <div class="mt-8">
@@ -54,8 +54,8 @@ export default {
       this.provider = val.provider;
       this.signer = val.signer;
     },
-    getNftPrice() {
-      this.$refs.mintNftCard.getNftPrice();
+    getTicketInfo() {
+      this.$refs.mintNftCard.getTicketInfo();
     },
   }
 }

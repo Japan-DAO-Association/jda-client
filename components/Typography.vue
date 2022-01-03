@@ -177,7 +177,7 @@ export default {
 .discordarea-h3-style {
   font-family: Raleway !important;
   text-align: center;
-  font-size: 30px !important;
+  font-size: 24px !important;
   margin-bottom: 30px !important;
   @media (max-width: 580px) {
     font-size: 20px !important;

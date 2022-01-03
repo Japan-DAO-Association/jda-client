@@ -10,7 +10,7 @@
 <script>
 import contract from '@/helpers/contract';
 import MintGen0PolygonAbi from '@/helpers/abis/MintGen0PolygonAbi';
-import USDCPolygonAbi from '@/helpers/abis/USDCPolygonAbi'
+// import USDCPolygonAbi from '@/helpers/abis/USDCPolygonAbi'
 
 export default {
   props: [
@@ -28,7 +28,7 @@ export default {
       // ブラウザ更新してもウォレット接続状態を保ちたい、vuexにはprovider, signerの保存ができなかったし親子コンポーネント間でやりとりしてるデータもブラウザ更新時に消える
       if (!this.provider.provider && !this.signer.provider) {
         // connect Walletの指示をする
-        console.log('connect your wallet');
+        console.log('please connect your wallet');
       } else {
         const {
           chainId
@@ -41,17 +41,19 @@ export default {
         if (chainId === 80001) {
           console.log('connected to mumbai');
           // const MintGen0MumbaiContract = await contract.getContract(process.env.MintGen0MumbaiAddress, MintGen0MumbaiAbi, this.signer);
-          // console.log(MintGen0MumbaiContract);
-          const USDCPolygonContract = await contract.getContract(process.env.USDCPolygonAddress, USDCPolygonAbi, this.signer);
-          console.log(USDCPolygonContract);
+          // const USDCPolygonContract = await contract.getContract(process.env.USDCPolygonAddress, USDCPolygonAbi, this.signer);
           // mumbaiでのミント処理
         } else if (chainId === 137) {
           console.log('connected to polygon');
           const MintGen0PolygonContract = await contract.getContract(process.env.MintGen0PolygonAddress, MintGen0PolygonAbi, this.signer);
-          console.log(MintGen0PolygonContract);
-          const USDCPolygonContract = await contract.getContract(process.env.USDCPolygonAddress, USDCPolygonAbi, this.signer);
-          console.log(USDCPolygonContract);
-          // polygonでのミント処理
+          // const USDCPolygonContract = await contract.getContract(process.env.USDCPolygonAddress, USDCPolygonAbi, this.signer);
+          try {
+            await MintGen0PolygonContract.BuyTicket();
+          } catch (e) {
+            console.log(e);
+            // throw new Error(e);
+          }
+          // エラー処理つける
         } else {
           console.log('wrong network');
           // wrong networkのモーダルかスナックバーを表示

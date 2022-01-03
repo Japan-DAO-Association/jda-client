@@ -32,9 +32,12 @@ export default {
 .message-row {
   position: relative;
   .message-h3 {
-    margin: 60px auto 258px!important;
+    margin: 96px auto 296px!important;
     @media (max-width: 599.9px) {
       margin: 60px auto 262px !important;
+    }
+    @media (max-width: 355px) {
+      margin: 60px auto 306px !important;
     }
   }
 }

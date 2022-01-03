@@ -30,7 +30,7 @@ export default {
 <style lang="scss" scoped>
 .discord-area {
   position: absolute;
-  bottom: 12%;
+  bottom: 100px;
   width: 100%;
   padding: 0 28%;
   @media (max-width: 1400px) {

@@ -37,7 +37,10 @@
 </template>
 
 <script>
+/* eslint-disable camelcase */
 import Typography from '@/components/Typography';
+import contract from '@/helpers/contract';
+import MintGen0PolygonAbi from '@/helpers/abis/MintGen0PolygonAbi';
 
 export default {
   components: {
@@ -50,13 +53,21 @@ export default {
   data: () => ({
     loading: false,
     selection: 1,
-    nftPrice: '',
+    nftPrice: 'please connect your wallet',
   }),
   methods: {
     reserve () {
       this.loading = true
       setTimeout(() => (this.loading = false), 2000)
     },
+    getNftPrice() {
+      setTimeout(async () => {
+        const MintGen0PolygonContract = await contract.getContract(process.env.MintGen0PolygonAddress, MintGen0PolygonAbi, this.signer);
+        const res = await MintGen0PolygonContract.GetTicketInfo();
+        console.log(res);
+        this.nftPrice = res[4] / 1000000;
+      }, 10);
+    }
   },
 }
 </script>

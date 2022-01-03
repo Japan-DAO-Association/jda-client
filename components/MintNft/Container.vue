@@ -9,7 +9,10 @@
     <!-- if it's connected it shouldn't show up and connected address should -->
     <!-- should research how to judge if wallet is connected, but the info of if vuex data exist is also necessary maybe -->
     <div class="text-center">
-      <ConnectWalletButton @transferWeb3='getWeb3' />
+      <ConnectWalletButton
+        @transferWeb3='getWeb3'
+        @getNftPrice='getNftPrice'
+      />
     </div>
     <div class="mt-8">
       <v-row
@@ -19,6 +22,7 @@
           class="card-col"
         >
           <MintNftCard
+            ref="mintNftCard"
             :provider="provider"
             :signer="signer"
           />
@@ -49,7 +53,10 @@ export default {
     getWeb3(val) {
       this.provider = val.provider;
       this.signer = val.signer;
-    }
+    },
+    getNftPrice() {
+      this.$refs.mintNftCard.getNftPrice();
+    },
   }
 }
 </script>

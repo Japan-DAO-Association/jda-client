@@ -134,7 +134,9 @@ export default {// 404 routing
           send_page_view: false,
         }
       }
-    ]
+    ],
+    // https://github.com/microcipcip/cookie-universal/
+    'cookie-universal-nuxt',
   ],
 
   i18n: {

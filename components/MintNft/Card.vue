@@ -19,10 +19,17 @@
     <Typography
       font="normal-black"
     >
-      blah blah blah blah blah blah blah blah
+      NFT desc
+    </Typography>
+    <Typography
+      font="normal-black"
+    >
+      Current Price: {{ nftPrice }}
     </Typography>
     <v-card-actions>
       <MintButton
+        :provider="provider"
+        :signer="signer"
         @reserve="reserve"
       />
     </v-card-actions>
@@ -36,9 +43,14 @@ export default {
   components: {
     Typography,
   },
+  props: [
+    'provider',
+    'signer',
+  ],
   data: () => ({
     loading: false,
     selection: 1,
+    nftPrice: '',
   }),
   methods: {
     reserve () {

@@ -138,6 +138,7 @@ export default {
   color: #000;
 }
 .hero-text {
+  font-size: 48px;
   font-family: Raleway !important;
   font-style: normal;
   font-weight: 500 !important;
@@ -151,7 +152,7 @@ export default {
 }
 .hero-h2-style {
   font-size: 72px;
-  line-height: 100px;
+  line-height: 64px;
   @media (max-width: 580px) {
     font-size: 50px;
     line-height: 34px;
@@ -163,6 +164,7 @@ export default {
 .h3-style {
   font-family: Raleway !important;
   margin-bottom: 80px !important;
+  font-size: 32px !important;
   @media (max-width: 580px) {
     margin-bottom: 40px !important;
   }

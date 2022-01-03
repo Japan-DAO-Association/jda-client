@@ -53,7 +53,6 @@ export default {
             console.log(e);
             // throw new Error(e);
           }
-          // エラー処理つける
         } else {
           console.log('wrong network');
           // wrong networkのモーダルかスナックバーを表示

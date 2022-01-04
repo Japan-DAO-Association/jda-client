@@ -37,7 +37,7 @@ export default {
     async mint() {
       await this.$emit('reserve');
 
-      if (!this.provider.provider && !this.signer.provider) {
+      if (!this.provider.provider || !this.signer.provider) {
         // connect Walletの指示をする
         console.log('please connect your wallet');
       } else {

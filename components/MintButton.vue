@@ -21,18 +21,15 @@ export default {
     'rawNftPrice',
   ],
   mounted() {
-    // web3.initialize(this.provider, this.signer);
     this.initialize();
   },
   methods: {
     async initialize() {
-      const isConnected = await web3.isConnected();
-      if (isConnected.isConnected) {
-        // eslint-disable-next-line vue/no-mutating-props
-        this.provider = isConnected.provider;
-        // eslint-disable-next-line vue/no-mutating-props
-        this.signer = isConnected.signer;
-      }
+      const {
+        provider,
+        signer
+      } = await web3.initialize();
+      [this.provider, this.signer] = [provider, signer];
     },
     async mint() {
       await this.$emit('reserve');

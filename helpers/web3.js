@@ -2,13 +2,12 @@ import { ethers } from 'ethers';
 import Web3Modal from 'web3modal';
 import providerOptions from './providerOptions';
 
-export async function initialize(propsProvider, propsSigner, fn) {
+export async function initialize() {
   const isConnected = await this.isConnected();
   if (isConnected.isConnected) {
-    propsProvider = isConnected.provider;
-    propsSigner = isConnected.signer;
-    if (fn) {
-      await fn();
+    return {
+      provider: isConnected.provider,
+      signer: isConnected.signer,
     }
   }
 }

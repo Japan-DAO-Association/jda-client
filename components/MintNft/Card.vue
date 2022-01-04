@@ -47,6 +47,7 @@
 import Typography from '@/components/Typography';
 import contract from '@/helpers/contract';
 import MintGen0PolygonAbi from '@/helpers/abis/MintGen0PolygonAbi';
+import web3 from '@/helpers/web3';
 
 export default {
   components: {
@@ -63,10 +64,24 @@ export default {
     nftPrice: 'please connect your wallet',
     remainingNumber: 'please connect your wallet',
   }),
+  mounted() {
+    // web3.initialize(this.provider, this.signer, this.getTicketInfo);
+    this.initialize();
+  },
   methods: {
     reserve () {
       this.loading = true
       setTimeout(() => (this.loading = false), 2000)
+    },
+    async initialize() {
+      const isConnected = await web3.isConnected();
+      if (isConnected.isConnected) {
+        // eslint-disable-next-line vue/no-mutating-props
+        this.provider = isConnected.provider;
+        // eslint-disable-next-line vue/no-mutating-props
+        this.signer = isConnected.signer;
+        this.getTicketInfo();
+      }
     },
     getTicketInfo() {
       setTimeout(async () => {

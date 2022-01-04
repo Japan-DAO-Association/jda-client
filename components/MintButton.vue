@@ -12,6 +12,7 @@ import contract from '@/helpers/contract';
 import MintGen0PolygonAbi from '@/helpers/abis/MintGen0PolygonAbi';
 import USDCPolygonAbi from '@/helpers/abis/USDCPolygonAbi'
 import utils from '@/helpers/utils';
+import web3 from '@/helpers/web3';
 
 export default {
   props: [
@@ -19,15 +20,23 @@ export default {
     'signer',
     'rawNftPrice',
   ],
-  data: () => ({
-
-  }),
+  mounted() {
+    // web3.initialize(this.provider, this.signer);
+    this.initialize();
+  },
   methods: {
+    async initialize() {
+      const isConnected = await web3.isConnected();
+      if (isConnected.isConnected) {
+        // eslint-disable-next-line vue/no-mutating-props
+        this.provider = isConnected.provider;
+        // eslint-disable-next-line vue/no-mutating-props
+        this.signer = isConnected.signer;
+      }
+    },
     async mint() {
       await this.$emit('reserve');
 
-      // ウォレットに接続してるかの判断も検討したい、どちらにせよ下の条件は必要or下の条件だけで良さそうだが
-      // ブラウザ更新してもウォレット接続状態を保ちたい、vuexにはprovider, signerの保存ができなかったし親子コンポーネント間でやりとりしてるデータもブラウザ更新時に消える
       if (!this.provider.provider && !this.signer.provider) {
         // connect Walletの指示をする
         console.log('please connect your wallet');

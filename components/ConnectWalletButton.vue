@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import callWeb3Modal from '@/helpers/web3modal';
+import web3 from '@/helpers/web3';
 
 export default {
   data: () => ({
@@ -19,7 +19,7 @@ export default {
       const {
         account,
         provider
-      } = await callWeb3Modal();
+      } = await web3.callWeb3Modal();
       const signer = await provider.getSigner();
       const {
         chainId

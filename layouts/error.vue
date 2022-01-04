@@ -1,18 +1,39 @@
 <template>
   <v-app dark>
-    <h1 v-if="error.statusCode === 404">
-      {{ pageNotFound }}
-    </h1>
-    <h1 v-else>
-      {{ otherError }}
-    </h1>
-    <NuxtLink to="/">
-      Home page
-    </NuxtLink>
+    <v-row
+    ref="vantaRef"
+    justify="center"
+    align="center"
+    class="wrapper"
+  >
+    <v-col cols="12" class="pb-0">
+      <div class="mx-10 text-wrapper">
+        <Typography
+          v-if="error.statusCode === 404"
+          font="h2"
+        >
+          {{ pageNotFound }}
+        </Typography>
+        <Typography
+          v-else
+          font="h2"
+        >
+          {{ otherError }}
+        </Typography>
+        <div class="text-center">
+          <NuxtLink to="/" class="home-link text-center">
+            Go to Home page
+          </NuxtLink>
+        </div>
+      </div>
+    </v-col>
+  </v-row>
   </v-app>
 </template>
 
 <script>
+import Net from 'vanta/src/vanta.net';
+
 export default {
   layout: 'empty',
   props: {
@@ -24,7 +45,7 @@ export default {
   data () {
     return {
       pageNotFound: '404 Not Found',
-      otherError: 'An error occurred'
+      otherError: 'Something went wrong...'
     }
   },
   head () {
@@ -33,12 +54,52 @@ export default {
     return {
       title
     }
-  }
+  },
+  mounted() {
+    // this.$router.push('/');
+    
+    this.vantaEffect = Net({
+      el: this.$refs.vantaRef,
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xff3f91,
+      backgroundColor: 0x0b193e,
+      points: 10,
+      maxDistance: 20,
+      spacing: 12,
+    })
+  },
+  beforeDestroy() {
+    if (this.vantaEffect) {
+      this.vantaEffect.destroy()
+    }
+  },
 }
 </script>
 
-<style scoped>
-h1 {
-  font-size: 20px;
+<style lang="scss" scoped>
+.wrapper {
+  background: rgba(11, 25, 62, 1);
+  position: relative;
+  .text-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    h1 {
+      font-size: 20px;
+      text-align: center;
+    }
+    .home-link {
+      font-size: 34px;
+    }
+  }
 }
 </style>

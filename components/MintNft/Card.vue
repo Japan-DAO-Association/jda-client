@@ -19,10 +19,23 @@
     <Typography
       font="normal-black"
     >
-      blah blah blah blah blah blah blah blah
+      NFT desc
+    </Typography>
+    <Typography
+      font="normal-black"
+    >
+      Current Price: {{ nftPrice }}
+    </Typography>
+    <Typography
+      font="normal-black"
+    >
+      Remaining: {{ remainingNumber }}
     </Typography>
     <v-card-actions>
       <MintButton
+        :provider="provider"
+        :signer="signer"
+        :raw-nft-price="rawNftPrice"
         @reserve="reserve"
       />
     </v-card-actions>
@@ -30,21 +43,41 @@
 </template>
 
 <script>
+/* eslint-disable camelcase */
 import Typography from '@/components/Typography';
+import contract from '@/helpers/contract';
+import MintGen0PolygonAbi from '@/helpers/abis/MintGen0PolygonAbi';
 
 export default {
   components: {
     Typography,
   },
+  props: [
+    'provider',
+    'signer',
+  ],
   data: () => ({
     loading: false,
     selection: 1,
+    rawNftPrice: '',
+    nftPrice: 'please connect your wallet',
+    remainingNumber: 'please connect your wallet',
   }),
   methods: {
     reserve () {
       this.loading = true
       setTimeout(() => (this.loading = false), 2000)
     },
+    getTicketInfo() {
+      setTimeout(async () => {
+        const MintGen0PolygonContract = await contract.getContract(process.env.MintGen0PolygonAddress, MintGen0PolygonAbi, this.signer);
+        const res = await MintGen0PolygonContract.GetTicketInfo();
+        console.log(res);
+        this.rawNftPrice = res[4];
+        this.nftPrice = this.rawNftPrice / 1000000;
+        this.remainingNumber = res[5] - res[6];
+      }, 10);
+    }
   },
 }
 </script>

@@ -24,7 +24,7 @@ export default {
     MintNftContainer,
   },
   mounted() {
-    this.$router.push('/');
+    // this.$router.push('/');
     
     this.vantaEffect = Net({
       el: this.$refs.vantaRef,

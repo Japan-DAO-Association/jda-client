@@ -17,7 +17,7 @@ export default {
   props: [
     'provider',
     'signer',
-    'nftPrice',
+    'rawNftPrice',
   ],
   data: () => ({
 
@@ -44,7 +44,7 @@ export default {
           // const MintGen0MumbaiContract = await contract.getContract(process.env.MintGen0MumbaiAddress, MintGen0MumbaiAbi, this.signer);
           // const USDCMumbaiContract = await contract.getContract(process.env.USDCPolygonAddress, USDCPolygonAbi, this.signer);
           // try {
-          //   const approveTx = await USDCMumbaiContract.approve(process.env.MintGen0MumbaiAddress, utils.parseUnitsToString(this.nftPrice, 'wei'), overrides);
+          //   const approveTx = await USDCMumbaiContract.approve(process.env.MintGen0MumbaiAddress, utils.parseUnitsToString(this.rawNftPrice, 'wei'), overrides);
           //   console.log(`Approve Transaction: ${approveTx}`);
           //   const buyTx = await MintGen0MumbaiContract.BuyTicket(overrides);
           //   console.log(`Buy Transaction: ${buyTx}`);
@@ -57,7 +57,7 @@ export default {
           const MintGen0PolygonContract = await contract.getContract(process.env.MintGen0PolygonAddress, MintGen0PolygonAbi, this.signer);
           const USDCPolygonContract = await contract.getContract(process.env.USDCPolygonAddress, USDCPolygonAbi, this.signer);
           try {
-            const approveTx = await USDCPolygonContract.approve(process.env.MintGen0PolygonAddress, utils.parseUnitsToString(this.nftPrice * 1000000, 'wei'), overrides);
+            const approveTx = await USDCPolygonContract.approve(process.env.MintGen0PolygonAddress, utils.parseUnitsToString(this.rawNftPrice, 'wei'), overrides);
             console.log(`Approve Transaction: ${approveTx}`);
             const buyTx = await MintGen0PolygonContract.BuyTicket(overrides);
             console.log(`Buy Transaction: ${buyTx}`);

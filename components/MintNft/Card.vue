@@ -35,7 +35,7 @@
       <MintButton
         :provider="provider"
         :signer="signer"
-        :nft-price="nftPrice"
+        :raw-nft-price="rawNftPrice"
         @reserve="reserve"
       />
     </v-card-actions>
@@ -59,6 +59,7 @@ export default {
   data: () => ({
     loading: false,
     selection: 1,
+    rawNftPrice: '',
     nftPrice: 'please connect your wallet',
     remainingNumber: 'please connect your wallet',
   }),
@@ -72,7 +73,8 @@ export default {
         const MintGen0PolygonContract = await contract.getContract(process.env.MintGen0PolygonAddress, MintGen0PolygonAbi, this.signer);
         const res = await MintGen0PolygonContract.GetTicketInfo();
         console.log(res);
-        this.nftPrice = res[4] / 1000000;
+        this.rawNftPrice = res[4];
+        this.nftPrice = this.rawNftPrice / 1000000;
         this.remainingNumber = res[5] - res[6];
       }, 10);
     }

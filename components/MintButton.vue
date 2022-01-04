@@ -64,7 +64,7 @@ export default {
             this.$emit('getTicketInfo');
           } catch (e) {
             console.log(e);
-            // throw new Error(e);
+            throw new Error(e);
           }
         } else {
           console.log('wrong network');

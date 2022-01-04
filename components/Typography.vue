@@ -4,6 +4,11 @@
       <slot />
     </h2>
   </div>
+  <div v-else-if="font === 'h2'">
+    <h2 class="h2-style">
+      <slot />
+    </h2>
+  </div>
   <div
     v-else-if="font === 'hero-h3'"
   >
@@ -136,6 +141,9 @@ export default {
 <style lang="scss" scoped>
 .font-black {
   color: #000;
+}
+.h2-style {
+  font-size: 50px;
 }
 .hero-text {
   font-family: Raleway !important;

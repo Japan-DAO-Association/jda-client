@@ -35,6 +35,7 @@
       <MintButton
         :provider="provider"
         :signer="signer"
+        :nft-price="nftPrice"
         @reserve="reserve"
       />
     </v-card-actions>

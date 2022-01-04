@@ -10,12 +10,14 @@
 <script>
 import contract from '@/helpers/contract';
 import MintGen0PolygonAbi from '@/helpers/abis/MintGen0PolygonAbi';
-// import USDCPolygonAbi from '@/helpers/abis/USDCPolygonAbi'
+import USDCPolygonAbi from '@/helpers/abis/USDCPolygonAbi'
+import utils from '@/helpers/utils';
 
 export default {
   props: [
     'provider',
     'signer',
+    'nftPrice',
   ],
   data: () => ({
 
@@ -34,21 +36,32 @@ export default {
           chainId
         } = await this.provider.getNetwork();
         console.log(chainId);
-        // const overrides = {
-        //   gasLimit: 500000
-        // };
+        const overrides = {
+          gasLimit: 500000
+        };
   
         if (chainId === 80001) {
-          console.log('connected to mumbai');
           // const MintGen0MumbaiContract = await contract.getContract(process.env.MintGen0MumbaiAddress, MintGen0MumbaiAbi, this.signer);
-          // const USDCPolygonContract = await contract.getContract(process.env.USDCPolygonAddress, USDCPolygonAbi, this.signer);
-          // mumbaiでのミント処理
+          // const USDCMumbaiContract = await contract.getContract(process.env.USDCPolygonAddress, USDCPolygonAbi, this.signer);
+          // try {
+          //   const approveTx = await USDCMumbaiContract.approve(process.env.MintGen0MumbaiAddress, utils.parseUnitsToString(this.nftPrice, 'wei'), overrides);
+          //   console.log(`Approve Transaction: ${approveTx}`);
+          //   const buyTx = await MintGen0MumbaiContract.BuyTicket(overrides);
+          //   console.log(`Buy Transaction: ${buyTx}`);
+          //   this.$emit('getTicketInfo');
+          // } catch (e) {
+          //   console.log(e);
+          //   // throw new Error(e);
+          // }
         } else if (chainId === 137) {
-          console.log('connected to polygon');
           const MintGen0PolygonContract = await contract.getContract(process.env.MintGen0PolygonAddress, MintGen0PolygonAbi, this.signer);
-          // const USDCPolygonContract = await contract.getContract(process.env.USDCPolygonAddress, USDCPolygonAbi, this.signer);
+          const USDCPolygonContract = await contract.getContract(process.env.USDCPolygonAddress, USDCPolygonAbi, this.signer);
           try {
-            await MintGen0PolygonContract.BuyTicket();
+            const approveTx = await USDCPolygonContract.approve(process.env.MintGen0PolygonAddress, utils.parseUnitsToString(this.nftPrice * 1000000, 'wei'), overrides);
+            console.log(`Approve Transaction: ${approveTx}`);
+            const buyTx = await MintGen0PolygonContract.BuyTicket(overrides);
+            console.log(`Buy Transaction: ${buyTx}`);
+            this.$emit('getTicketInfo');
           } catch (e) {
             console.log(e);
             // throw new Error(e);

@@ -43,20 +43,20 @@
         >
           <v-row>
             <v-col>
-              <!-- <a
-                href="whitepaper-en.pdf"
+              <a
+                href="whitepaper-en-v1.pdf"
                 target="_blank"
                 rel="noopener"
-              > -->
+              >
                 <Typography class="footer-font">{{ $t('footer.whitepaper.en') }}</Typography>
-              <!-- </a> -->
-              <!-- <a
-                href="whitepaper-ja.pdf"
+              </a>
+              <a
+                href="whitepaper-ja-v1.pdf"
                 target="_blank"
                 rel="noopener"
               >
                 <Typography class="footer-font">{{ $t('footer.whitepaper.ja') }}</Typography>
-              </a> -->
+              </a>
             </v-col>
           </v-row>
         </v-col>

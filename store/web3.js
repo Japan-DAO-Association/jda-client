@@ -2,37 +2,29 @@
 import Cookies from 'js-cookie';
 
 export const state = () => ({
-  web3: {
-    account: '',
-  },
+  account: '',
 });
 
 export const mutations = {
-  updateWeb3(state, web3) {
-    state.web3 = web3;
-    Cookies.set('web3', state.web3);
-  },
   updateAccount(state, account) {
-    state.web3.account = account;
-    Cookies.set('web3', state.web3);
+    state.account = account;
+    Cookies.set('account', state.account);
   },
 };
 
 export const getters = {
-  getWeb3(state) {
-    if (state.web3.account !== '') {
-      return state.web3;
+  getAccount(state) {
+    if (state.account !== '') {
+      return state.account;
     } else {
-      return Cookies.get('web3');
+      console.log(Cookies.get('account'))
+      return Cookies.get('account');
     }
   },
 };
 
 export const actions = {
-  updateWeb3(vuexContext, web3) {
-    vuexContext.commit('updateWeb3', web3);
-  },
-  udpateAcount(vuexContext, account) {
+  updateAccount(vuexContext, account) {
     vuexContext.commit('updateAccount', account);
   },
 }

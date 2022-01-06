@@ -82,12 +82,21 @@ export default {
     },
     getTicketInfo() {
       setTimeout(async () => {
-        const MintGen0PolygonContract = await contract.getContract(process.env.MintGen0PolygonAddress, MintGen0PolygonAbi, this.signer);
-        const res = await MintGen0PolygonContract.GetTicketInfo();
-        console.log(res);
-        this.rawNftPrice = res[4];
-        this.nftPrice = this.rawNftPrice / 1000000;
-        this.remainingNumber = res[5] - res[6];
+        const {
+          chainId
+        } = await this.provider.getNetwork();
+
+        if (chainId === 137 || chainId === 80001) {
+          const MintGen0PolygonContract = await contract.getContract(process.env.MintGen0PolygonAddress, MintGen0PolygonAbi, this.signer);
+          const res = await MintGen0PolygonContract.GetTicketInfo();
+          console.log(res);
+          this.rawNftPrice = res[4];
+          this.nftPrice = this.rawNftPrice / 1000000;
+          this.remainingNumber = res[5] - res[6];
+          } else {
+          this.nftPrice = 'connect to Polygon Network and refresh.';
+          this.remainingNumber = 'connect to Polygon Network and refresh.';
+        }
       }, 10);
     }
   },

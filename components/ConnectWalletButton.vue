@@ -11,9 +11,6 @@
 import web3 from '@/helpers/web3';
 
 export default {
-  data: () => ({
-
-  }),
   methods: {
     async connectWallet() {
       const {
@@ -21,15 +18,8 @@ export default {
         provider
       } = await web3.callWeb3Modal();
       const signer = await provider.getSigner();
-      const {
-        chainId
-      } = await provider.getNetwork();
-      console.log(chainId);
 
-      this.$store.dispatch('web3/updateWeb3', {
-        account,
-      });
-      // console.log(this.$store.getters['web3/getWeb3'].account);
+      this.$store.dispatch('web3/updateAccount', account);
       this.$emit('transferWeb3', {
         provider,
         signer

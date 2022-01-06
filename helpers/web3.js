@@ -45,8 +45,20 @@ export async function callWeb3Modal() {
   }
 }
 
+export async function getEnsName(provider, account) {
+  const network = await provider.getNetwork();
+  let ensName;
+  if (network.chainId === 1) {
+    ensName = await provider.lookupAddress(account);
+  } else {
+    ensName = null;
+  }
+  return ensName;
+}
+
 export default {
   initialize,
   isConnected,
   callWeb3Modal,
+  getEnsName,
 };

@@ -6,9 +6,22 @@
     >
       First connect your wallet on Polygon Network and see the current Gen0 NFT price.
     </Typography>
-    <!-- if it's connected it shouldn't show up and connected address should -->
-    <!-- should research how to judge if wallet is connected, but the info of if vuex data exist is also necessary maybe -->
-    <div class="text-center">
+    <div
+      v-if="isConnected"
+      class="text-center"
+    >
+      <Typography>
+        Your current connected address is below.
+      </Typography>
+      <Web3Profile
+        :provider="provider"
+        :signer="signer"
+      />
+    </div>
+    <div
+      v-else
+      class="text-center"
+    >
       <ConnectWalletButton
         @transferWeb3='getWeb3'
         @getTicketInfo='getTicketInfo'
@@ -33,6 +46,7 @@
 </template>
 
 <script>
+import web3 from '@/helpers/web3';
 import Aos from '@/components/Aos';
 import Typography from '@/components/Typography';
 import ConnectWalletButton from '@/components/ConnectWalletButton';
@@ -48,11 +62,26 @@ export default {
   data: () => ({
     provider: {},
     signer: {},
+    isConnected: false,
   }),
+  mounted() {
+    this.initialize();
+  },
   methods: {
+    async initialize() {
+      const {
+        isConnected,
+        provider,
+        signer
+      } = await web3.isConnected();
+      if (isConnected) {
+        [this.provider, this.signer] = [provider, signer];
+        this.isConnected = true;
+      }
+    },
     getWeb3(val) {
-      this.provider = val.provider;
-      this.signer = val.signer;
+      [this.provider, this.signer] = [val.provider, val.signer];
+      this.isConnected = true;
     },
     getTicketInfo() {
       this.$refs.mintNftCard.getTicketInfo();

@@ -17,7 +17,6 @@ export const getters = {
     if (state.account !== '') {
       return state.account;
     } else {
-      console.log(Cookies.get('account'))
       return Cookies.get('account');
     }
   },

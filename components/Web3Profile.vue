@@ -24,6 +24,10 @@ export default {
   methods: {
     async initialize() {
       this.account = this.$store.getters['web3/getAccount'];
+      if (!this.account) {
+        const accounts = await this.provider.listAccounts();
+        this.account = accounts[0];
+      }
       this.ensName = await web3.getEnsName(this.provider, this.account);
     }
   }

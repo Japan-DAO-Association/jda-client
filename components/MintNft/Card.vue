@@ -37,6 +37,7 @@
         :signer="signer"
         :raw-nft-price="rawNftPrice"
         @reserve="reserve"
+        @showWrongNetworkDialog="showWrongNetworkDialog"
       />
     </v-card-actions>
   </v-card>
@@ -98,6 +99,9 @@ export default {
           this.remainingNumber = 'connect to Polygon Network and refresh.';
         }
       }, 10);
+    },
+    async showWrongNetworkDialog() {
+      await this.$emit('showWrongNetworkDialog');
     }
   },
 }

@@ -34,10 +34,14 @@
         <v-col
           class="card-col"
         >
+          <Dialog
+            ref="dialog"
+          />
           <MintNftCard
             ref="mintNftCard"
             :provider="provider"
             :signer="signer"
+            @showWrongNetworkDialog="showWrongNetworkDialog"
           />
         </v-col>
       </v-row>
@@ -86,6 +90,12 @@ export default {
     getTicketInfo() {
       this.$refs.mintNftCard.getTicketInfo();
     },
+    async showWrongNetworkDialog() {
+      await this.$refs.dialog.showDialog(
+        "You're connecting to wrong network.",
+        "Please connect to connect to Polygon Network and refresh."
+      );
+    }
   }
 }
 </script>

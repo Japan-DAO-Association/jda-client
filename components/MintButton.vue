@@ -35,8 +35,7 @@ export default {
       await this.$emit('reserve');
 
       if (!this.provider.provider || !this.signer.provider) {
-        // connect Walletの指示をする
-        console.log('please connect your wallet');
+        // console.log('please connect your wallet');
       } else {
         const {
           chainId
@@ -73,8 +72,7 @@ export default {
             throw new Error(e);
           }
         } else {
-          console.log('wrong network');
-          // wrong networkのモーダルかスナックバーを表示
+          await this.$emit('showWrongNetworkDialog');
         }
       }
     },

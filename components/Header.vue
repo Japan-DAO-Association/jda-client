@@ -114,7 +114,7 @@ export default {
       group: null,
       linkTexts: [
         { text: 'Connect to Dfinity' },
-        { text: 'Connect to Polygon' },
+        { text: 'Mint Gen0 NFT on Polygon' },
       ],
     }
   },

@@ -11,7 +11,7 @@
         indeterminate
       ></v-progress-linear>
     </template>
-    <Typography font="nftcard-h4">NFT title</Typography>
+    <Typography font="nftcard-h4">GEN0 NFT</Typography>
     <v-img
       height="250"
       src="ogp.png"
@@ -19,7 +19,7 @@
     <Typography
       font="normal-black"
     >
-      NFT desc
+      GEN0 NFT is JDA's first NFT with lots of merits like our governance token and very rich NFTs will be distributed to the buyers in the future.
     </Typography>
     <Typography
       font="normal-black"

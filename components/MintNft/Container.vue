@@ -1,6 +1,6 @@
 <template>
   <Aos>
-    <Typography font="h3" class="text-center">Mint NFT on Polygon</Typography>
+    <Typography font="h3" class="text-center">Mint GEN0 NFT on Polygon</Typography>
     <Typography
       class="desc text-center"
     >

@@ -23,9 +23,9 @@ export function isConnected() {
 }
 
 const _getWeb3Modal = () => {
-  // const network = process.env.NODE_ENV === 'development' ? 'mumbai' : 'polygon';
+  // const network = process.env.NODE_ENV === 'development' ? 'testnet' : 'mainnet';
   const web3Modal = new Web3Modal({
-    network: 'polygon',
+    network: 'mainnet',
     cacheProvider: true,
     providerOptions,
   })

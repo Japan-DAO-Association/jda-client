@@ -5,15 +5,19 @@ import Portis from "@portis/web3";
 import Authereum from "authereum";
 import ethProvider from 'eth-provider';
 
+const customNetworkOptions = {
+  rpcUrl: 'https://alpha.ethereum.matic.network/',
+  chainId: 137
+};
+
 const providerOptions = {
   injected: {
     package: null
   },
-  // Example with WalletConnect provider
   walletconnect: {
     package: WalletConnectProvider,
     options: {
-      infuraId: "INFURA_ID" // required
+      infuraId: process.env.INFURA_ID
     }
   },
   // torus: {
@@ -32,13 +36,16 @@ const providerOptions = {
   fortmatic: {
     package: Fortmatic,
     options: {
-      key: "FORTMATIC_KEY" // required
+      key: process.env.FORTMATIC_API_KEY,
+      network: customNetworkOptions,
     }
   },
   portis: {
     package: Portis,
     options: {
-      id: "PORTIS_ID" // required
+      id: process.env.PORTIS_ID,
+      // network: process.env.NODE_ENV === 'development' ? 'maticMumbai' : 'matic'
+      network: 'matic'
     }
   },
   authereum: {

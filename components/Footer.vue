@@ -44,7 +44,7 @@
           <v-row>
             <v-col>
               <a
-                href="whitepaper-en-v1.pdf"
+                href="whitepaper-en-v1_1.pdf"
                 target="_blank"
                 rel="noopener"
               >

@@ -1989,10 +1989,10 @@
     keccak "^3.0.2"
     randombytes "^2.1.0"
 
-"@toruslabs/torus-embed@^1.19.0":
-  version "1.19.0"
-  resolved "https://registry.yarnpkg.com/@toruslabs/torus-embed/-/torus-embed-1.19.0.tgz#4cb382d9f2ffc670e0c1b89cdcbf6f9863ba09eb"
-  integrity sha512-wHCEfVMtkCkscN3bKvmxdMLyWR0HSYOLPInaVg3xPhyHgy4wk08HM3/abUlNBrvM5izXiZ1sp+VvwANlbG+yIA==
+"@toruslabs/torus-embed@^1.20.3":
+  version "1.20.3"
+  resolved "https://registry.yarnpkg.com/@toruslabs/torus-embed/-/torus-embed-1.20.3.tgz#5a01a189499564d56ce47390987ac4fcfd91f16a"
+  integrity sha512-uCgKNTrwRzq7RDHj4MyKVlBqwl1/QjAE/KY2jlKhvpfOS9Jz9wW+9yA3YTl9Y+OcwgDMEThenTsW++p81caS7g==
   dependencies:
     "@metamask/obs-store" "^7.0.0"
     "@toruslabs/fetch-node-details" "^4.0.2"

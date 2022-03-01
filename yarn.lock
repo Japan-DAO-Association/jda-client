@@ -11424,10 +11424,10 @@ thread-loader@^3.0.4:
     neo-async "^2.6.2"
     schema-utils "^3.0.0"
 
-three@^0.137.5:
-  version "0.137.5"
-  resolved "https://registry.yarnpkg.com/three/-/three-0.137.5.tgz#a1e34bedd0412f2d8797112973dfadac78022ce6"
-  integrity sha512-rTyr+HDFxjnN8+N/guZjDgfVxgHptZQpf6xfL/Mo7a5JYIFwK6tAq3bzxYYB4Ae0RosDZlDuP+X5aXDXz+XnHQ==
+three@^0.138.1:
+  version "0.138.1"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.138.1.tgz#1839757179fc4a0a933310d017394e1f3b6588f7"
+  integrity sha512-SDoBVP0zIc0f265Sc2qSOo0izme6EL+rQl+PuzzFSadLmbMpzUv6pGhyGGyKE0CGREYZXQRV2xybY1b6NY45lg==
 
 through2@^2.0.0, through2@^2.0.3:
   version "2.0.5"

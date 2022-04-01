@@ -22,7 +22,7 @@
     "aos": "^3.0.0-beta.6",
     "authereum": "^0.1.14",
     "core-js": "^3.20.3",
-    "dayjs": "^1.10.7",
+    "dayjs": "^1.11.0",
     "eth-provider": "^0.10.0",
     "ethers": "^5.5.4",
     "fortmatic": "^2.2.1",

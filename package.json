@@ -34,7 +34,7 @@
     "vue-gl": "^1.0.0",
     "vue-typer": "^1.2.0",
     "vuetify": "^2.6.3",
-    "web3": "^1.7.0",
+    "web3": "^1.7.1",
     "web3modal": "^1.9.5"
   },
   "devDependencies": {

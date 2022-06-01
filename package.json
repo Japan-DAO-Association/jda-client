@@ -25,7 +25,7 @@
     "dayjs": "^1.10.7",
     "eth-provider": "^0.10.0",
     "ethers": "^5.5.4",
-    "fortmatic": "^2.2.1",
+    "fortmatic": "^2.4.0",
     "json-to-graphql-query": "^2.2.0",
     "nuxt": "^2.15.7",
     "p5": "^1.4.0",

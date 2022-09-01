@@ -6414,10 +6414,10 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.8.tgz#e412b8d33f5e006593cbd3cee6df9f2cebbe802a"
   integrity sha512-qkIilPUYcNhJpd33n0GBXTB1MMPp14TxEsEs0pTrsSVucApsYzW5V+Q8Qxhik6KU3evy+qkAAowTByymK0avdg==
 
-gsap@^3.9.1:
-  version "3.9.1"
-  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.9.1.tgz#d4c7443540497afee9ddc0824fd0180224e33360"
-  integrity sha512-JSGVYoC6da4pIjdF/yxFU6Rz8OojOIDkbooveZlfNg0+JIoFoRruyfWAEi6R/gUeNcuOiTqUIb0gi1nCNrHf8w==
+gsap@^3.11.0:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.11.0.tgz#5a45da0f35b49e2c479e1e274feb6ac51e86478b"
+  integrity sha512-TV5aFGqXht+0o/CelnhCikSe3QGeG+q1XA/fyFFsMzesILHgWgFWIz0NuXIgcMaL5h7MG2l+j0BTupS5YyYkrw==
 
 gzip-size@^6.0.0:
   version "6.0.0"
@@ -8601,12 +8601,12 @@ nuxt-animejs@^1.2.2:
   dependencies:
     animejs "^3.2.1"
 
-nuxt-gsap-module@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/nuxt-gsap-module/-/nuxt-gsap-module-1.6.0.tgz#37be3cf807933b45a746a0bb67a1f7107dc8bb5e"
-  integrity sha512-KaH2gALeHASo/eSkH4Fh/DREjXwdmpAeY53xUAjvNZccDevJO8+7b6uZjPHPfDe397rl3vCzJOf/lwZJW1e3Jg==
+nuxt-gsap-module@^1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/nuxt-gsap-module/-/nuxt-gsap-module-1.7.2.tgz#c15059b967488a14d13721a8d33005bc2da3d6cc"
+  integrity sha512-pVHsHv8Ra9Fn7CcuaWoG5MgigYwonNJipI/NGX8X5ta2IBitNWOYTgB+vHt1zYHUxo6lFaoptw1QrABm4hknQQ==
   dependencies:
-    gsap "^3.9.1"
+    gsap "^3.11.0"
 
 nuxt@^2.15.7:
   version "2.15.8"
